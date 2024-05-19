@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FFEC"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="139dp"
+        android:gravity="center"
+        android:text="@string/welcome_back"
+        android:textColor="#121712"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/usernameContainer"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:background="#D8FDC1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="219dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="#80000000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordContainer"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
+        android:background="#D8FDC1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="297dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="#80000000"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:text="@string/login"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="432dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/my_button_background" />
+
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:text="@string/signup"
+        android:textColor="#121712"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="480dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="#638763"
+        android:textSize="14sp"
+        android:layout_marginTop="390dp"
+        android:layout_alignParentStart="true"/>
+
+
+    <ImageView
+        android:id="@+id/arden"
+        android:layout_width="198dp"
+        android:layout_height="65dp"
+        android:layout_alignStart="@+id/gglogo"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="-13dp"
+        android:contentDescription="@string/arden_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arden" />
+
+    <ImageView
+        android:id="@+id/gglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_marginTop="-13dp"
+        android:contentDescription="@string/gglogo_description"
+        android:src="@drawable/gglogo" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="30dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp"
+        android:contentDescription="@string/arden_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GardenGlide</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="signup">New user? Sign Up</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="gglogo_description">App logo</string>
+    <string name="arden_description">Decorative image</string>
+    <string name="arrow_description">Back button</string>
+    <string name="create_account">Create an account</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="terms_privacy_policy">By signing up, you agree to our Terms and Privacy Policy.</string>
+    <color name="my_button_background">#46D146</color>
+</resources>
