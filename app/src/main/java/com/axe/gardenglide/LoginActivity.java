@@ -1,5 +1,6 @@
 package com.axe.gardenglide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,9 @@ public class LoginActivity extends AppCompatActivity {
         signupText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle sign up logic here
+                // Navigate to the SigninActivity
+                Intent intent = new Intent(LoginActivity.this, SigninActivity.class);
+                startActivity(intent);
             }
         });
 

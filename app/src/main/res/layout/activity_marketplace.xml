@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- TextView for Welcome Text -->
+    <TextView
+        android:id="@+id/welcome_text_farmer_marketplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- TextView for Home Text -->
+    <TextView
+        android:id="@+id/home_text_farmer_marketplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- TextView for My Store Text -->
+    <TextView
+        android:id="@+id/store_text_farmer_marketplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ImageView for User Image -->
+    <ImageView
+        android:id="@+id/user_image_farmer_marketplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ImageView for Final Logo -->
+    <ImageView
+        android:id="@+id/final_logo_farmer_marketplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ImageView for Image 4 -->
+    <ImageView
+        android:id="@+id/image_4_farmer_marketplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- TextView for Welcome Text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- TextView for Welcome Text -->
+                <TextView
+                    android:id="@+id/welcome_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- TextView for Home Text -->
+                <TextView
+                    android:id="@+id/home_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- TextView for My Store Text -->
+                <TextView
+                    android:id="@+id/store_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- ImageView for User Image -->
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- ImageView for Final Logo -->
+                <ImageView
+                    android:id="@+id/final_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- ImageView for Image 4 -->
+                <ImageView
+                    android:id="@+id/image_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- TextView for Welcome Text -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!-- TextView for Welcome Text -->
+                        <TextView
+                            android:id="@+id/welcome_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <!-- TextView for Home Text -->
+                        <TextView
+                            android:id="@+id/home_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <!-- TextView for My Store Text -->
+                        <TextView
+                            android:id="@+id/store_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <!-- ImageView for User Image -->
+                        <ImageView
+                            android:id="@+id/user_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <!-- ImageView for Final Logo -->
+                        <ImageView
+                            android:id="@+id/final_logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <!-- ImageView for Image 4 -->
+                        <ImageView
+                            android:id="@+id/image_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/welcome_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- TextView for Home Text -->
+                    <TextView
+                        android:id="@+id/home_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- TextView for My Store Text -->
+                    <TextView
+                        android:id="@+id/store_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- ImageView for User Image -->
+                    <ImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- ImageView for Final Logo -->
+                    <ImageView
+                        android:id="@+id/final_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- ImageView for Image 4 -->
+                    <ImageView
+                        android:id="@+id/image_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/welcome_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- TextView for Home Text -->
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- TextView for My Store Text -->
+            <TextView
+                android:id="@+id/store_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- ImageView for User Image -->
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- ImageView for Final Logo -->
+            <ImageView
+                android:id="@+id/final_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- ImageView for Image 4 -->
+            <ImageView
+                android:id="@+id/image_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- TextView for Home Text -->
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- TextView for My Store Text -->
+    <TextView
+        android:id="@+id/store_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ImageView for User Image -->
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ImageView for Final Logo -->
+    <ImageView
+        android:id="@+id/final_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- ImageView for Image 4 -->
+    <ImageView
+        android:id="@+id/image_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

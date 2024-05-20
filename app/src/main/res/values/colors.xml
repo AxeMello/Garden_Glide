@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="butG">#46D146</color>
+    <color name="midG">#D8FDC1</color>
 </resources>

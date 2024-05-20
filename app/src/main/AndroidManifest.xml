@@ -14,15 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GardenGlide"
         tools:targetApi="31">
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Declaration for SigninActivity -->
+        <activity
+            android:name=".SigninActivity"
+            android:exported="true">
+        </activity>
+
+    </application>
 </manifest>

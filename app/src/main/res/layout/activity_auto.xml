@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_auto1.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top Section -->
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/ggtit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-61dp"
+        android:layout_marginEnd="116dp"
+        android:src="@drawable/ggtit" />
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ggtit"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/time" />
+
+    <ImageView
+        android:id="@+id/date"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-17dp"
+        android:layout_marginEnd="175dp"
+        android:src="@drawable/date" />
+
+    <ImageView
+        android:id="@+id/topA"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/topA" />
+
+    <TextView
+        android:id="@+id/turn_off_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topA"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="@string/turn_off" />
+
+    <TextView
+        android:id="@+id/watering_history_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/turn_off_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/watering_history" />
+
+    <TextView
+        android:id="@+id/system_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watering_history_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/system_status" />
+
+    <TextView
+        android:id="@+id/current_level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/system_status_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/current_level" />
+
+    <TextView
+        android:id="@+id/active_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_level_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/active" />
+
+    <!-- Bottom Section -->
+    <RelativeLayout
+        android:id="@+id/bottom_section"
+        android:layout_width="100000dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-61dp"
+            android:layout_marginEnd="116dp"
+            android:src="@drawable/camera" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/home"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/cart" />
+
+        <ImageView
+            android:id="@+id/dot"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/cart"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="175dp"
+            android:src="@drawable/dot" />
+
+        <!-- Button Row -->
+
+        <!-- Additional Boxes and Text -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Automatically waters your plants when needed."
+                android:textColor="#555755"
+                android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="37dp"
+            android:text="Smart Watering System"
+            android:textColor="#212521"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Watering History"
+            android:textColor="#303430"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="In 4 days"
+                android:textColor="#95aa96"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/next_watering"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Next Watering"
+                android:textColor="#434643"
+                android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:background="#d8fdc1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="98dp"
+        android:paddingVertical="14dp"
+        android:layout_alignParentBottom="true"
+>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="2 days ago"
+                android:textColor="#8fa491"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/last_watered"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Last Watered"
+                android:textColor="#404340"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="80%"
+                android:textColor="#469200"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_level_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Current Level"
+                android:textColor="#494b48"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="System Status"
+            android:textColor="#313431"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Water Tank Level"
+            android:textColor="#2c302c"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Active"
+            android:textColor="#44a029"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
