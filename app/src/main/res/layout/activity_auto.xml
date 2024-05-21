@@ -31,7 +31,7 @@
         android:layout_height="50dp"
         android:layout_below="@id/ggtit"
         android:layout_marginTop="11dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp"
         android:src="@drawable/time" />
 
     <ImageView
@@ -101,7 +101,7 @@
 
     <RelativeLayout
         android:id="@+id/bottom_section"
-        android:layout_width="100000dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -125,8 +125,8 @@
             android:layout_height="30dp"
             android:layout_below="@id/home"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="600dp"
-            android:layout_marginEnd="116dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
             android:src="@drawable/camera" />
 
         <ImageView
@@ -135,7 +135,7 @@
             android:layout_height="50dp"
             android:layout_below="@id/home"
             android:layout_marginTop="11dp"
-            android:layout_marginRight="100dp"
+            android:layout_marginEnd="100dp"
             android:src="@drawable/cart" />
 
         <ImageView
@@ -148,35 +148,33 @@
             android:layout_marginEnd="175dp"
             android:src="@drawable/dot" />
 
-        <!-- Button Row -->
-
         <!-- Additional Boxes and Text -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Automatically waters your plants when needed."
+                android:textColor="#555755"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_marginEnd="37dp"
+                android:text="Smart Watering System"
+                android:textColor="#212521"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="Automatically waters your plants when needed."
-            android:textColor="#555755"
-            android:textSize="16sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
-            android:layout_marginEnd="37dp"
-            android:text="Smart Watering System"
-            android:textColor="#212521"
-            android:textSize="30sp" />
-
-    </RelativeLayout>
-
-    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -188,7 +186,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -199,7 +197,6 @@
                 android:textColor="#95aa96"
                 android:textSize="12sp" />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -208,29 +205,25 @@
                 android:text="Next Watering"
                 android:textColor="#434643"
                 android:textSize="15sp" />
+        </RelativeLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="0dp"
-        android:background="#d8fdc1"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingHorizontal="98dp"
-        android:paddingVertical="14dp"
-        android:layout_alignParentBottom="true"
->
-
-    </LinearLayout>
-
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="0dp"
+            android:background="#d8fdc1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="98dp"
+            android:paddingVertical="14dp"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="#000000">
+            android:layout_marginTop="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -244,13 +237,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/last_watered"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
                 android:text="Last Watered"
                 android:textColor="#404340"
                 android:textSize="16sp" />
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -270,7 +261,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/current_level_text"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
                 android:text="Current Level"
@@ -305,5 +295,4 @@
             android:textColor="#44a029"
             android:textSize="17sp" />
     </RelativeLayout>
-
 </RelativeLayout>

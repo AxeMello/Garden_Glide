@@ -37,15 +37,6 @@
                 android:gravity="center_vertical|center_horizontal" />
         </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="138dp"
-            android:layout_height="120dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="111dp"
-            android:layout_marginBottom="462dp"
-            android:src="@drawable/image" />
-
         <RelativeLayout
             android:layout_width="353dp"
             android:layout_height="53dp"
@@ -92,7 +83,7 @@
             android:layout_width="22dp"
             android:layout_height="23dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="50dp"
             android:layout_marginBottom="4.61dp"
             android:src="@drawable/market" />
 
@@ -100,7 +91,7 @@
             android:layout_width="22dp"
             android:layout_height="22dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="120.82dp"
+            android:layout_marginStart="90dp"
             android:layout_marginBottom="4.61dp"
             android:src="@drawable/tag" />
 
@@ -108,9 +99,8 @@
             android:layout_width="20dp"
             android:layout_height="22dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="311.02dp"
+            android:layout_marginStart="130dp"
             android:layout_marginBottom="4.61dp"
-            android:layout_marginStart="80dp"
             android:src="@drawable/dot" />
     </RelativeLayout>
 
@@ -153,13 +143,20 @@
         android:layout_marginTop="22dp">
 
         <ImageView
-            android:id="@+id/user1"
+            android:id="@+id/user"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_marginStart="308dp"
             android:layout_marginTop="37dp"
             android:src="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/product"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="370dp"
+            android:src="@drawable/product" />
 
         <RelativeLayout
             android:layout_width="278dp"
@@ -180,6 +177,7 @@
             android:layout_marginTop="31dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ggtit" />
+
     </RelativeLayout>
 
 </RelativeLayout>
