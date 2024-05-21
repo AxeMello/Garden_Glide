@@ -1,10 +1,9 @@
-package com.axe.gardenglide;
+package com.example.farmermarketplace;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,29 +13,35 @@ public class MarketplaceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_marketplace);
+        setContentView(R.layout.activity_main);
 
         // Initialize views
-        TextView welcomeText = findViewById(R.id.welcome_text);
-        TextView homeText = findViewById(R.id.home_text);
-        TextView storeText = findViewById(R.id.store_text);
-        ImageView userImage = findViewById(R.id.user_image);
-        ImageView finalLogo = findViewById(R.id.final_logo);
-        ImageView image4 = findViewById(R.id.image_4);
+        ImageView user = findViewById(R.id.user);
+        TextView myStore = findViewById(R.id.myStore);
+        TextView home = findViewById(R.id.home);
+        TextView welcomeText = findViewById(R.id.welcomeText);
+        TextView taskStatus = findViewById(R.id.taskStatus);
+        TextView trialStatus = findViewById(R.id.trialStatus);
+        TextView setupGuide = findViewById(R.id.setupGuide);
+        ImageView logoImage = findViewById(R.id.logoImage);
+        ImageView image4 = findViewById(R.id.image4);
+        RelativeLayout topBox = findViewById(R.id.topBox);
+        RelativeLayout bottomBox = findViewById(R.id.bottomBox);
+        RelativeLayout bottomNav = findViewById(R.id.bottomNav);
 
         // Set click listener for user image
-        userImage.setOnClickListener(new View.OnClickListener() {
+        user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Handle user image click logic here
             }
         });
 
-        // Set click listener for final logo
-        finalLogo.setOnClickListener(new View.OnClickListener() {
+        // Set click listener for logo image
+        logoImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle final logo click logic here
+                // Handle logo image click logic here
             }
         });
 

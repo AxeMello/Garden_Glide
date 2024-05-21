@@ -83,6 +83,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@color/black"
+        android:backgroundTint="@color/butG"
         android:layout_marginTop="432dp"
         android:layout_alignParentStart="true"
     />
