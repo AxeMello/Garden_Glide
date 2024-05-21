@@ -1,6 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFF5FFEC"
+    tools:context=".ScanActivity">
+
+    <!-- Logo and User Image Section -->
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ggtit"
+        android:layout_width="198dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ggtit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/logo_background"
+        android:layout_width="278dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="22dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_green_light"
+        android:backgroundTint="#FFD8FDC1"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="@+id/ggtit"
+        app:layout_constraintBottom_toTopOf="@+id/ggtit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Recent Scans Section -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
+        android:background="#D8FDC1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Recent Scans"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:titleTextColor="#292929" />
+
+    <View
+        android:id="@+id/recent_scans_background"
+        android:layout_width="337dp"
+        android:layout_height="132dp"
+        android:background="#FFD8FDC1"
+        android:clipToOutline="true"
+        android:cornerRadius="15dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="127dp"
+        android:src="@drawable/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cam"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/cam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/reload"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="97dp"
+        android:src="@drawable/reload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Image Prediction Section -->
+
+    <!-- Bottom Section with Diagnostic Instruction -->
+    <View
+        android:id="@+id/image_prediction_section"
+        android:layout_width="361dp"
+        android:layout_height="544dp"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <View
+        android:id="@+id/diagnostic_instruction_section"
+        android:layout_width="361dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="337dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diagnostic_instruction_text"
+        android:layout_width="261dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="381dp"
+        android:gravity="center"
+        android:text="Point the camera at your plant to get a diagnosis"
+        android:textColor="#424242"
+        android:textSize="14.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/image_prediction_title"
+        android:layout_width="190dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="337dp"
+        android:gravity="center"
+        android:text="Image Prediction"
+        android:textColor="#292929"
+        android:textSize="14.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Navigation Bar Section -->
+
+    <View
+        android:id="@+id/navigation_bar_section"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="762dp"
+        android:alpha="0.5"
+        android:background="#FFD8FDC1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="876dp">
+
+        <ImageView
+            android:id="@+id/nav_icon_1"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:contentDescription="Navigation Icon 1"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/nav_icon_2"
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:contentDescription="Navigation Icon 2"
+            android:src="@drawable/camera" />
+
+        <ImageView
+            android:id="@+id/nav_icon_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Navigation Icon 3"
+            android:src="@drawable/cart" />
+
+        <ImageView
+            android:id="@+id/nav_icon_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="Navigation Icon 4"
+            android:src="@drawable/dot" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Nested Boxes for Plants and their Details -->
+    <!-- Add the nested boxes for plant details and images similar to the above sections -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
