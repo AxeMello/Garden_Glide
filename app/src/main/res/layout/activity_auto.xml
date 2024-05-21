@@ -1,4 +1,4 @@
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
     <!-- res/layout/activity_auto1.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -89,44 +89,10 @@
     <RelativeLayout
         android:id="@+id/bottom_section"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-18dp"
         android:padding="16dp">
-
-        <ImageView
-            android:id="@+id/home"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="640dp"
-            android:src="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/camera"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="200dp"
-            android:layout_marginTop="350"
-            android:src="@drawable/camera" />
-
-        <ImageView
-            android:id="@+id/cart"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_below="@id/home"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="100dp"
-            android:src="@drawable/cart" />
-
-        <ImageView
-            android:id="@+id/dot"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="610dp"
-            android:layout_marginStart="300"
-            android:src="@drawable/dot" />
 
         <!-- Additional Boxes and Text -->
 
@@ -148,22 +114,6 @@
 
         </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="450dp"
-            android:layout_height="75dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="670dp"
-            android:background="#d8fdc1"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingHorizontal="14dp"
-            android:paddingVertical="14dp"></LinearLayout>
-
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="500dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -217,12 +167,12 @@
             android:text="Water Tank Level"
             android:textColor="#2c302c"
             android:textSize="20sp" />
-    </>
+    />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="530"
+        android:layout_marginTop="530dp"
         android:layout_marginStart="220dp"
         android:text="System Status"
         android:textColor="#313431"
@@ -260,7 +210,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="-50dp"
-        android:layout_marginStart="2"
+        android:layout_marginStart="2dp"
         android:layout_marginEnd="215dp"
         android:src="@drawable/ggtit" />
 
@@ -273,5 +223,5 @@
         android:textColor="#434643"
         android:textSize="15sp" />
 
-</RelativeLayout>
     </RelativeLayout>
+</RelativeLayout>

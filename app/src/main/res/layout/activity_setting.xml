@@ -33,11 +33,9 @@
         android:clipToOutline="true"/>
 
     <RelativeLayout
-        android:layout_width="182dp"
-        android:layout_height="354dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="353dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="157dp">
 
         <TextView
             android:id="@+id/textMarkets"
@@ -48,52 +46,6 @@
             android:layout_marginBottom="240dp"
             android:gravity="center_vertical"
             android:text="Markets"
-            android:textColor="#616161"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textBrand"
-            android:layout_width="98dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="59dp"
-            android:layout_marginBottom="73dp"
-            android:gravity="center_vertical"
-            android:text="Brand"
-            android:textColor="#616161"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textDomains"
-            android:layout_width="123dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="39dp"
-            android:layout_marginBottom="158dp"
-            android:gravity="center_vertical"
-            android:text="Domains"
-            android:textColor="#616161"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textAppsAndSalesChannels"
-            android:layout_width="256dp"
-            android:layout_height="131dp"
-            android:layout_marginStart="94dp"
-            android:layout_marginBottom="156dp"
-            android:gravity="center_vertical"
-            android:text="Apps and sales channels"
-            android:textColor="#616161"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textCustomerEvents"
-            android:layout_width="196dp"
-            android:layout_height="28dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="209dp"
-            android:gravity="center_vertical"
-            android:text="Customer events"
             android:textColor="#616161"
             android:textSize="20sp" />
 
@@ -111,21 +63,32 @@
         <ImageView
             android:layout_width="182dp"
             android:layout_height="4dp"
+            android:layout_alignParentEnd="true"
             android:layout_marginBottom="325dp"
-            android:src="@drawable/image"
-            android:layout_alignParentEnd="true" />
+            android:src="@drawable/image" />
 
         <TextView
-            android:id="@+id/textSettings"
-            android:layout_width="134dp"
+            android:id="@+id/textBrand"
+            android:layout_width="98dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="49dp"
-            android:layout_marginBottom="331dp"
+            android:layout_marginEnd="73dp"
+            android:layout_marginBottom="73dp"
             android:gravity="center_vertical"
-            android:text="Settings"
+            android:text="Brand"
             android:textColor="#616161"
-            android:textSize="26sp" />
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textDomains"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="158dp"
+            android:gravity="center_vertical"
+            android:text="Domains"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -133,17 +96,7 @@
         android:layout_height="26dp"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="132dp"
-        android:layout_marginBottom="299dp">
-
-        <TextView
-            android:id="@+id/textFiles"
-            android:layout_width="192dp"
-            android:layout_height="39dp"
-            android:gravity="center_vertical"
-            android:text="Files"
-            android:textColor="#616161"
-            android:textSize="20sp" />
-    </RelativeLayout>
+        android:layout_marginBottom="299dp"/>
 
     <RelativeLayout
         android:layout_width="182dp"
@@ -151,18 +104,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="161dp"
         android:layout_marginBottom="628dp" />
-
-    <TextView
-        android:id="@+id/textGiftCards"
-        android:layout_width="131dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="190dp"
-        android:layout_marginBottom="644dp"
-        android:gravity="center_vertical"
-        android:text="Gift cards"
-        android:textColor="#616161"
-        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textNotification"
@@ -209,24 +150,13 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textStarActivityLog"
-        android:layout_width="216dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="656dp"
-        android:gravity="center_vertical"
-        android:text="Star activity log"
-        android:textColor="#616161"
-        android:textSize="20sp" />
-
-    <TextView
         android:id="@+id/textGardenGlideAdmin"
         android:layout_width="229dp"
         android:layout_height="41dp"
         android:layout_marginStart="46dp"
         android:layout_marginTop="694dp"
         android:gravity="center_vertical"
-        android:text="Garden Glide admin"
+        android:text="Your Profile"
         android:textColor="#616161"
         android:textSize="20sp" />
 
@@ -280,4 +210,16 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textSettings"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="331dp"
+        android:gravity="center_vertical"
+        android:text="Settings"
+        android:textColor="#616161"
+        android:textSize="26sp" />
+
 </RelativeLayout>
