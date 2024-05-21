@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5ffec"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"/>
+
+    <ImageView
+        android:id="@+id/ggtit"
+        android:layout_width="198dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ggtit"/>
+
+    <View
+        android:id="@+id/logo_background"
+        android:layout_width="278dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="22dp"
+        android:alpha="0.5"
+        android:background="@android:color/holo_green_light"
+        android:backgroundTint="#FFD8FDC1"
+        android:clipToOutline="true"/>
+
+    <RelativeLayout
+        android:layout_width="182dp"
+        android:layout_height="354dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="353dp">
+
+        <TextView
+            android:id="@+id/textMarkets"
+            android:layout_width="88dp"
+            android:layout_height="51dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="74dp"
+            android:layout_marginBottom="240dp"
+            android:gravity="center_vertical"
+            android:text="Markets"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textBrand"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="73dp"
+            android:gravity="center_vertical"
+            android:text="Brand"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textDomains"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="158dp"
+            android:gravity="center_vertical"
+            android:text="Domains"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textAppsAndSalesChannels"
+            android:layout_width="256dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginBottom="156dp"
+            android:gravity="center_vertical"
+            android:text="Apps and sales channels"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textCustomerEvents"
+            android:layout_width="196dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="209dp"
+            android:gravity="center_vertical"
+            android:text="Customer events"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textCustomerData"
+            android:layout_width="152dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="339dp"
+            android:gravity="center_vertical"
+            android:text="Customer data"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="182dp"
+            android:layout_height="4dp"
+            android:layout_marginBottom="325dp"
+            android:src="@drawable/image"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textSettings"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="331dp"
+            android:gravity="center_vertical"
+            android:text="Settings"
+            android:textColor="#616161"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="182dp"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="299dp">
+
+        <TextView
+            android:id="@+id/textFiles"
+            android:layout_width="192dp"
+            android:layout_height="39dp"
+            android:gravity="center_vertical"
+            android:text="Files"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="182dp"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="628dp" />
+
+    <TextView
+        android:id="@+id/textGiftCards"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="644dp"
+        android:gravity="center_vertical"
+        android:text="Gift cards"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textNotification"
+        android:layout_width="185dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="388dp"
+        android:gravity="center_vertical"
+        android:text="Notification"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textLanguages"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="519dp"
+        android:gravity="center_vertical"
+        android:text="Languages"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textCustomerPrivacy"
+        android:layout_width="226dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="568dp"
+        android:gravity="center_vertical"
+        android:text="Customer privacy"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textPolicies"
+        android:layout_width="235dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="614dp"
+        android:gravity="center_vertical"
+        android:text="Policies"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textStarActivityLog"
+        android:layout_width="216dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="656dp"
+        android:gravity="center_vertical"
+        android:text="Star activity log"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textGardenGlideAdmin"
+        android:layout_width="229dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="694dp"
+        android:gravity="center_vertical"
+        android:text="Garden Glide admin"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="34dp"
+        android:background="#f5ffec"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/navigation_bar_section"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:alpha="0.5"
+            android:background="#FFD8FDC1"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/nav_icon_1"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:contentDescription="Navigation Icon 1"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/nav_icon_2"
+                android:layout_width="34dp"
+                android:layout_height="30dp"
+                android:contentDescription="Navigation Icon 2"
+                android:src="@drawable/camera" />
+
+            <ImageView
+                android:id="@+id/nav_icon_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Navigation Icon 3"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/nav_icon_4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Navigation Icon 4"
+                android:src="@drawable/dot" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+</RelativeLayout>

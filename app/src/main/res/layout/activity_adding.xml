@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="360dp"
+        android:layout_height="113dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-372dp"
+        android:src="@drawable/background" />
+
+    <RelativeLayout
+        android:layout_width="348dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="-26dp">
+
+        <ImageView
+            android:id="@+id/user1_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="308dp"
+            android:src="@drawable/user1" />
+
+        <View
+            android:layout_width="278dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="22dp"
+            android:background="@color/tint_color" />
+
+        <ImageView
+            android:id="@+id/finallogo1_image"
+            android:layout_width="118dp"
+            android:layout_height="105dp"
+            android:src="@drawable/finallogo1" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="198dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="31dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image4" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="748dp"
+        android:layout_marginTop="169dp"
+        android:paddingHorizontal="-22dp">
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:src="@drawable/image" />
+
+        <RelativeLayout
+            android:layout_width="404dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+
+            <ImageView
+                android:layout_width="404dp"
+                android:layout_height="52dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/background" />
+
+            <!-- Add nested layouts and views for the bottom navigation bar here -->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="404p"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="54dp"
+        android:background="@color/background_color">
+
+        <RelativeLayout
+            android:layout_width="404dp"
+            android:layout_height="163dp"
+            android:layout_marginBottom="-233dp"
+            android:background="@color/background_color">
+
+            <TextView
+                android:layout_width="108dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-233dp"
+                android:layout_marginBottom="-64dp"
+                android:text="Point of Sale"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-356dp"
+                android:layout_marginBottom="-66dp"
+                android:src="@drawable/image" />
+
+            <View
+                android:layout_width="380dp"
+                android:layout_height="59dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-12dp"
+                android:layout_marginBottom="-82dp"
+                android:background="@color/background_color" />
+
+            <RelativeLayout
+                android:layout_width="404dp"
+                android:layout_height="72dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="-91dp"
+                android:background="@color/background_color">
+
+                <TextView
+                    android:layout_width="43dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-24dp"
+                    android:layout_marginBottom="-43dp"
+                    android:text="Edit"
+                    android:textColor="@color/edit_text_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="190dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-176dp"
+                    android:layout_marginBottom="-50dp"
+                    android:text="Sales channels"
+                    android:textColor="@color/text_color"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="103dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-238dp"
+                    android:layout_marginBottom="-10dp"
+                    android:text="Online Store"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-356dp"
+                    android:layout_marginBottom="-12dp"
+                    android:src="@drawable/image" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-250dp"
+                android:layout_marginBottom="-16dp"
+                android:text="Variants"
+                android:textColor="@color/text_color"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <!-- Add more nested layouts and views as needed -->
+
+    </RelativeLayout>
+
+    <!-- Add more nested layouts and views as needed -->
+
+</RelativeLayout>

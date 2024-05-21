@@ -1,4 +1,4 @@
-package com.example.farmermarketplace;
+package com.axe.gardenglide;
 
 import android.os.Bundle;
 import android.view.View;

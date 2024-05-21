@@ -62,15 +62,37 @@
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
         app:titleTextColor="#292929" />
 
+    <ImageView
+        android:id="@+id/spid"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="440dp"
+        android:src="@drawable/spid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/plant"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="650dp"
+        android:src="@drawable/plant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <View
         android:id="@+id/recent_scans_background"
         android:layout_width="337dp"
         android:layout_height="132dp"
         android:background="#FFD8FDC1"
-        android:clipToOutline="true"
-        android:cornerRadius="15dp"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="163dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.27"
+        app:layout_constraintHorizontal_bias="0.5"/>
 
     <ImageView
         android:id="@+id/image"
@@ -105,21 +127,6 @@
     <!-- Image Prediction Section -->
 
     <!-- Bottom Section with Diagnostic Instruction -->
-    <View
-        android:id="@+id/image_prediction_section"
-        android:layout_width="361dp"
-        android:layout_height="544dp"
-        tools:layout_editor_absoluteY="256dp" />
-
-    <View
-        android:id="@+id/diagnostic_instruction_section"
-        android:layout_width="361dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="337dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/diagnostic_instruction_text"
@@ -157,23 +164,22 @@
         android:id="@+id/navigation_bar_section"
         android:layout_width="match_parent"
         android:layout_height="38dp"
-        android:layout_marginTop="762dp"
         android:alpha="0.5"
         android:background="#FFD8FDC1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="38dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="876dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/nav_icon_1"
@@ -203,8 +209,5 @@
             android:contentDescription="Navigation Icon 4"
             android:src="@drawable/dot" />
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <!-- Nested Boxes for Plants and their Details -->
-    <!-- Add the nested boxes for plant details and images similar to the above sections -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
