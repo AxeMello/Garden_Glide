@@ -6,18 +6,22 @@
     android:background="#f5ffec">
 
     <!-- Top Box -->
+
+    <!-- Middle Texts -->
+
     <RelativeLayout
         android:layout_width="348dp"
         android:layout_height="105dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="-22dp">
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-18dp">
 
         <ImageView
             android:id="@+id/user"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="12dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="330dp"
             android:layout_marginTop="37dp"
             android:src="@drawable/user" />
 
@@ -28,62 +32,66 @@
             android:layout_marginTop="22dp"
             android:background="#80d8fdc1"
             android:clipToOutline="true"
-            android:shapeRadius="40dp"/>
+            android:shapeRadius="40dp" />
 
 
         <ImageView
             android:layout_width="198dp"
             android:layout_height="65dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="31dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ggtit" />
     </RelativeLayout>
 
-    <!-- Middle Texts -->
     <TextView
         android:layout_width="208dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="120dp"
         android:text="My Store"
         android:textColor="#616161"
-        android:textSize="22sp"
+        android:textSize="29sp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="111dp"
         android:layout_height="34dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="115dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="25dp"
+        android:gravity="center_vertical"
         android:text="Home"
         android:textColor="#484848"
-        android:textSize="20sp"
-        android:gravity="center_vertical" />
+        android:textSize="29dp" />
 
     <TextView
         android:layout_width="324dp"
         android:layout_height="49dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="295dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="260dp"
         android:text="Welcome to your Marketplace, Benedict"
         android:textColor="#8b8b8b"
         android:textSize="19sp"
         android:gravity="center_vertical" />
 
     <!-- Bottom Box -->
+
+    <!-- Bottom Navigation -->
+
     <RelativeLayout
         android:layout_width="441dp"
         android:layout_height="105dp"
-        android:layout_marginTop="420dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="12dp"
         android:background="#f5ffec">
 
         <TextView
             android:layout_width="129dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="90dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="80dp"
             android:gravity="center_vertical"
-            android:layout_marginStart="20dp"
             android:text="0 of 4 tasks complete"
             android:textColor="#929292"
             android:textSize="11sp" />
@@ -91,7 +99,7 @@
         <TextView
             android:layout_width="177dp"
             android:layout_height="21dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="30dp"
             android:gravity="center_vertical"
             android:text="Your trial just started"
@@ -101,7 +109,7 @@
         <TextView
             android:layout_width="139dp"
             android:layout_height="27dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="0dp"
             android:gravity="center_vertical"
             android:text="Setup guide"
@@ -111,12 +119,11 @@
         <ImageView
             android:layout_width="62dp"
             android:layout_height="61dp"
-            android:layout_marginStart="-40dp"
-            android:layout_marginTop="-21dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-4dp"
             android:src="@drawable/image" />
     </RelativeLayout>
 
-    <!-- Bottom Navigation -->
     <RelativeLayout
         android:layout_width="360dp"
         android:layout_height="34dp"

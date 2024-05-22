@@ -1,639 +1,225 @@
-@Composable
-    fun Market(modifier: Modifier = Modifier) {
-    Box(
-    modifier = modifier
-    .requiredWidth(width = 360.dp)
-    .requiredHeight(height = 800.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.TopStart)
-    .offset(x = 0.dp,
-    y = (-20).dp)
-    .fillMaxWidth()
-    .requiredHeight(height = 839.dp)
-    .background(color = Color(0xfff5ffec))
-    .padding(end = -13.dp)
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-7).dp,
-    y = (-688).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 87.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-25).dp,
-    y = (-21).dp)
-    .requiredWidth(width = 21.dp)
-    .requiredHeight(height = 17.dp))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-229).dp,
-    y = (-25).dp)
-    .requiredWidth(width = 13.dp)
-    .requiredHeight(height = 8.dp))
-    Text(
-    text = "Active",
-    color = Color(0xff595959),
-    style = TextStyle(
-    fontSize = 19.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-242).dp,
-    y = (-22).dp)
-    .requiredWidth(width = 61.dp)
-    .requiredHeight(height = 18.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-7).dp,
-    y = (-21).dp)
-    .requiredWidth(width = 360.dp)
-    .requiredHeight(height = 676.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-54.93023681640625).dp)
-    .requiredWidth(width = 348.dp)
-    .requiredHeight(height = 151.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-1.7984542846679688).dp)
-    .requiredWidth(width = 348.dp)
-    .requiredHeight(height = 61.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Text(
-    text = "Home page",
-    color = Color(0xff919191),
-    style = TextStyle(
-    fontSize = 10.790698051452637.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-238.29456329345703).dp,
-    y = (-12.875953674316406).dp)
-    .requiredWidth(width = 64.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Text(
-    text = "Collections",
-    color = Color(0xff666666),
-    style = TextStyle(
-    fontSize = 14.38759708404541.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-220.31006622314453).dp,
-    y = (-32.372084617614746).dp)
-    .requiredWidth(width = 82.dp)
-    .requiredHeight(height = 14.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-313.82947540283203).dp,
-    y = (-27.875972747802734).dp)
-    .requiredWidth(width = 19.dp)
-    .requiredHeight(height = 21.dp))
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-60.24806213378906).dp)
-    .requiredWidth(width = 348.dp)
-    .requiredHeight(height = 47.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Text(
-    text = "Product organization",
-    color = Color(0xff676767),
-    style = TextStyle(
-    fontSize = 14.38759708404541.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-150.1705322265625).dp,
-    y = (-14.38760757446289).dp)
-    .requiredWidth(width = 152.dp)
-    .requiredHeight(height = 16.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-313.82947540283203).dp,
-    y = (-12.589134216308594).dp)
-    .requiredSize(size = 19.dp))
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-104.3100814819336).dp)
-    .requiredWidth(width = 348.dp)
-    .requiredHeight(height = 46.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Text(
-    text = "Shipping",
-    color = Color(0xff606060),
-    style = TextStyle(
-    fontSize = 14.38759708404541.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-238.29456329345703).dp,
-    y = (-12.372108459472656).dp)
-    .requiredWidth(width = 64.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-312.9302558898926).dp,
-    y = (-13.488374710083008).dp)
-    .requiredWidth(width = 21.dp)
-    .requiredHeight(height = 17.dp))
-    }
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 38.dp,
-    y = (-193).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 121.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-13).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 56.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-69).dp,
-    y = (-7).dp)
-    .requiredWidth(width = 90.dp)
-    .requiredHeight(height = 41.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-3).dp,
-    y = (-1).dp)
-    .requiredWidth(width = 82.dp)
-    .requiredHeight(height = 39.dp)
-    .clip(shape = RoundedCornerShape(topStart = 13.dp, topEnd = 10.75.dp, bottomStart = 6.5.dp, bottomEnd = 7.25.dp))
-    .background(color = Color(0xfff1f1f1)))
-    Text(
-    text = "0",
-    color = Color(0xff666666),
-    style = TextStyle(
-    fontSize = 18.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-55).dp,
-    y = (-13).dp)
-    .requiredWidth(width = 10.dp)
-    .requiredHeight(height = 15.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-3).dp,
-    y = (-12).dp)
-    .requiredWidth(width = 18.dp)
-    .requiredHeight(height = 16.dp))
-    }
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-159).dp,
-    y = (-25).dp)
-    .requiredWidth(width = 12.dp)
-    .requiredHeight(height = 3.dp))
-    Text(
-    text = "Available",
-    color = Color(0xff5c5c5c),
-    style = TextStyle(
-    fontSize = 18.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-287).dp,
-    y = (-19).dp)
-    .requiredWidth(width = 84.dp)
-    .requiredHeight(height = 16.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-49).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 55.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Text(
-    text = "Edit",
-    color = Color(0xfff5ffec),
-    style = TextStyle(
-    fontSize = 12.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-13).dp,
-    y = (-22).dp)
-    .requiredWidth(width = 28.dp)
-    .requiredHeight(height = 14.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Text(
-    text = "Inventory",
-    color = Color(0xff595959),
-    style = TextStyle(
-    fontSize = 20.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-260).dp,
-    y = (-27).dp)
-    .requiredWidth(width = 110.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Text(
-    text = "Edit",
-    color = Color(0xff4b6ebb),
-    style = TextStyle(
-    fontSize = 15.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-61).dp,
-    y = (-32).dp)
-    .requiredWidth(width = 29.dp)
-    .requiredHeight(height = 15.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    }
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 32.dp,
-    y = (-297).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 105.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-303).dp,
-    y = (-17).dp)
-    .requiredWidth(width = 71.dp)
-    .requiredHeight(height = 67.dp)
-    .background(color = Color(0xfff5ffec)))
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = 0.dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 57.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Text(
-    text = "Add options like color, size, etc.",
-    color = Color(0xff898989),
-    style = TextStyle(
-    fontSize = 18.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-82).dp,
-    y = (-19).dp)
-    .requiredWidth(width = 255.dp)
-    .requiredHeight(height = 20.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-351).dp,
-    y = (-20).dp)
-    .requiredSize(size = 18.dp))
-    }
-    Text(
-    text = "Variants",
-    color = Color(0xff575757),
-    style = TextStyle(
-    fontSize = 20.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-252).dp,
-    y = (-57).dp)
-    .requiredWidth(width = 117.dp)
-    .requiredHeight(height = 48.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 32.dp,
-    y = (-407).dp)
-    .requiredWidth(width = 365.dp)
-    .requiredHeight(height = 153.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Text(
-    text = "Point of Sale",
-    color = Color(0xff606060),
-    style = TextStyle(
-    fontSize = 18.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-222).dp,
-    y = (-21).dp)
-    .requiredWidth(width = 128.dp)
-    .requiredHeight(height = 17.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-362).dp,
-    y = (-25).dp)
-    .requiredSize(size = 9.dp))
-    Text(
-    text = "Online Store",
-    color = Color(0xff616161),
-    style = TextStyle(
-    fontSize = 18.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-231).dp,
-    y = (-48).dp)
-    .requiredWidth(width = 120.dp)
-    .requiredHeight(height = 47.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-362).dp,
-    y = (-64).dp)
-    .requiredSize(size = 9.dp))
-    Text(
-    text = "2 channels·1issue",
-    color = Color(0xff8f8f8f),
-    style = TextStyle(
-    fontSize = 13.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-247).dp,
-    y = (-108).dp)
-    .requiredWidth(width = 123.dp)
-    .requiredHeight(height = 13.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Text(
-    text = "Edit",
-    color = Color(0xff4b6ebb),
-    style = TextStyle(
-    fontSize = 15.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-52).dp,
-    y = (-134).dp)
-    .requiredWidth(width = 29.dp)
-    .requiredHeight(height = 15.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Text(
-    text = "Sales channels",
-    color = Color(0xff575757),
-    style = TextStyle(
-    fontSize = 20.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-231).dp,
-    y = (-121).dp)
-    .requiredWidth(width = 140.dp)
-    .requiredHeight(height = 49.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 5.dp,
-    y = (-565).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 78.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = 0.dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 82.dp)
-    .background(color = Color(0xfff5ffec)))
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 15.dp,
-    y = (-23).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 53.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-21).dp)
-    .requiredWidth(width = 387.dp)
-    .requiredHeight(height = 53.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-1).dp)
-    .requiredWidth(width = 381.dp)
-    .requiredHeight(height = 50.dp)
-    .background(color = Color(0xfff5ffec)))
-    Text(
-    text = "Add description",
-    color = Color(0xff898989),
-    style = TextStyle(
-    fontSize = 16.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-209).dp,
-    y = (-15).dp)
-    .requiredWidth(width = 127.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-350).dp,
-    y = (-16).dp)
-    .requiredSize(size = 19.dp))
-    }
-    Text(
-    text = "0.00",
-    color = Color(0xff636363),
-    style = TextStyle(
-    fontSize = 16.sp),
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-291).dp,
-    y = 0.dp)
-    .requiredWidth(width = 45.dp)
-    .requiredHeight(height = 16.dp)
-    .wrapContentHeight(align = Alignment.CenterVertically))
-    }
-    }
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-333).dp,
-    y = (-687).dp)
-    .requiredWidth(width = 17.dp)
-    .requiredHeight(height = 21.dp))
-    }
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = 0.dp,
-    y = (-4).dp)
-    .requiredWidth(width = 360.dp)
-    .requiredHeight(height = 34.dp)
-    .background(color = Color(0xfff5ffec))
-    ) {
-    Box(
-    modifier = Modifier
-    .requiredWidth(width = 360.dp)
-    .requiredHeight(height = 38.dp)
-    .background(color = Color(0xffd8fdc1).copy(alpha = 0.5f)))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-28).dp,
-    y = (-12).dp)
-    .requiredWidth(width = 25.dp)
-    .requiredHeight(height = 7.dp))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-120.81636047363281).dp,
-    y = (-4.6122283935546875).dp)
-    .requiredSize(size = 22.dp))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-215.5102081298828).dp,
-    y = (-4.612216949462891).dp)
-    .requiredWidth(width = 22.dp)
-    .requiredHeight(height = 23.dp))
-    Image(
-    painter = painterResource(id = R.drawable.image),
-    contentDescription = "Image",
-    modifier = Modifier
-    .align(alignment = Alignment.BottomEnd)
-    .offset(x = (-311.0204677581787).dp,
-    y = (-4.6122283935546875).dp)
-    .requiredWidth(width = 20.dp)
-    .requiredHeight(height = 22.dp))
-    }
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.TopStart)
-    .offset(x = 0.dp,
-    y = (-21).dp)
-    .requiredWidth(width = 348.dp)
-    .requiredHeight(height = 105.dp)
-    ) {
-    Image(
-    painter = painterResource(id = R.drawable.user1),
-    contentDescription = "user 1",
-    modifier = Modifier
-    .align(alignment = Alignment.TopStart)
-    .offset(x = 308.dp,
-    y = 37.dp)
-    .requiredSize(size = 40.dp))
-    Box(
-    modifier = Modifier
-    .align(alignment = Alignment.TopStart)
-    .offset(x = 2.dp,
-    y = 22.dp)
-    .requiredWidth(width = 278.dp)
-    .requiredHeight(height = 71.dp)
-    .clip(shape = RoundedCornerShape(bottomEnd = 40.dp))
-    .background(color = Color(0xffd8fdc1).copy(alpha = 0.5f)))
-    Image(
-    painter = painterResource(id = R.drawable.finallogo1),
-    contentDescription = "final logo 1",
-    modifier = Modifier
-    .requiredWidth(width = 118.dp)
-    .requiredHeight(height = 105.dp))
-    Image(
-    painter = painterResource(id = R.drawable.image4),
-    contentDescription = "image 4",
-    contentScale = ContentScale.Crop,
-    modifier = Modifier
-    .align(alignment = Alignment.TopStart)
-    .offset(x = 60.dp,
-    y = 31.dp)
-    .requiredWidth(width = 198.dp)
-    .requiredHeight(height = 65.dp))
-    }
-    }
-    }
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5ffec">
 
-    @Preview(widthDp = 360, heightDp = 800)
-    @Composable
-    private fun MarketPreview() {
-    Market(Modifier)
-    }
+    <!-- Top Box -->
+    <RelativeLayout
+        android:layout_width="348dp"
+        android:layout_height="105dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-22dp">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/user" />
+
+        <RelativeLayout
+            android:layout_width="278dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="22dp"
+            android:background="#80d8fdc1"
+            android:clipToOutline="true"
+            android:shapeRadius="40dp"/>
+
+
+        <ImageView
+            android:layout_width="198dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="31dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ggtit" />
+    </RelativeLayout>
+
+    <!-- Middle Texts -->
+    <TextView
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:layout_marginStart="20dp"
+        android:text="Product title"
+        android:textColor="#616161"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/firstImage"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/image"/>
+
+    <ImageView
+        android:id="@+id/firstImage"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="350dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/image"/>
+
+    <TextView
+        android:id="@+id/activeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="60dp"
+        android:text="Active"
+        android:textColor="#5a5a5a"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <TextView
+        android:layout_width="111dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="Media"
+        android:textColor="#484848"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/firstImage"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/image"/>
+
+    <ImageView
+        android:id="@+id/firstImage"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/image"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="310dp"
+        android:text="Add description"
+        android:textColor="#8b8b8b"
+        android:textSize="19sp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="111dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="60dp"
+        android:gravity="center_vertical"
+        android:text="0.00"
+        android:textColor="#484848"
+        android:textSize="20sp" />
+
+    <!-- Bottom Box -->
+    <RelativeLayout
+        android:layout_width="441dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="420dp"
+        android:background="#f5ffec">
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:text="0 of 4 tasks complete"
+            android:textColor="#929292"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="177dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:text="Your trial just started"
+            android:textColor="#8b8b8b"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:text="Setup guide"
+            android:textColor="#5d5d5d"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="-40dp"
+            android:layout_marginTop="-21dp"
+            android:src="@drawable/image" />
+    </RelativeLayout>
+
+    <!-- Bottom Navigation -->
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:background="#80d8fdc1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/image" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="215dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/image" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="23dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/image" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="311dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/image" />
+    </RelativeLayout>
+
+</RelativeLayout>

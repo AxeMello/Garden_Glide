@@ -7,9 +7,9 @@
 
     <ImageView
         android:id="@+id/user"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="340dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="350dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/user"/>
 
@@ -26,7 +26,7 @@
         android:layout_width="278dp"
         android:layout_height="71dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="-2dp"
         android:alpha="0.5"
         android:background="@android:color/holo_green_light"
         android:backgroundTint="#FFD8FDC1"
@@ -43,21 +43,11 @@
             android:id="@+id/textMarkets"
             android:layout_width="88dp"
             android:layout_height="51dp"
-            android:layout_marginTop="480dp"
+            android:layout_marginTop="250dp"
             android:layout_marginBottom="240dp"
             android:gravity="center_vertical"
+            android:layout_marginStart="30dp"
             android:text="Markets"
-            android:textColor="#616161"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/textCustomerData"
-            android:layout_width="152dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="339dp"
-            android:gravity="center_vertical"
-            android:text="Customer data"
             android:textColor="#616161"
             android:textSize="20sp" />
 
@@ -72,9 +62,10 @@
             android:id="@+id/textBrand"
             android:layout_width="98dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150"
+            android:layout_marginTop="385dp"
             android:layout_marginEnd="73dp"
             android:layout_marginBottom="73dp"
+            android:layout_marginStart="30dp"
             android:gravity="center_vertical"
             android:text="Brand"
             android:textColor="#616161"
@@ -84,13 +75,50 @@
             android:id="@+id/textDomains"
             android:layout_width="123dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="325dp"
             android:layout_marginEnd="45dp"
-            android:layout_marginBottom="158dp"
+            android:layout_marginBottom="170dp"
+            android:layout_marginStart="30dp"
             android:gravity="center_vertical"
             android:text="Domains"
             android:textColor="#616161"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textGardenGlideAdmin"
+            android:layout_width="229dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center_vertical"
+            android:text="Your Profile"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textCustomerPrivacy"
+            android:layout_width="226dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="630dp"
+            android:gravity="center_vertical"
+            android:text="Customer privacy"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textSettings"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="331dp"
+            android:gravity="center_vertical"
+            android:text="Settings"
+            android:textColor="#616161"
+            android:textSize="26sp" />
 
     </RelativeLayout>
 
@@ -112,8 +140,8 @@
         android:id="@+id/textNotification"
         android:layout_width="185dp"
         android:layout_height="36dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="445dp"
         android:gravity="center_vertical"
         android:text="Notification"
         android:textColor="#616161"
@@ -123,21 +151,10 @@
         android:id="@+id/textLanguages"
         android:layout_width="177dp"
         android:layout_height="41dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="519dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="195dp"
         android:gravity="center_vertical"
         android:text="Languages"
-        android:textColor="#616161"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textCustomerPrivacy"
-        android:layout_width="226dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="568dp"
-        android:gravity="center_vertical"
-        android:text="Customer privacy"
         android:textColor="#616161"
         android:textSize="20sp" />
 
@@ -145,21 +162,10 @@
         android:id="@+id/textPolicies"
         android:layout_width="235dp"
         android:layout_height="31dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="614dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="510dp"
         android:gravity="center_vertical"
         android:text="Policies"
-        android:textColor="#616161"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textGardenGlideAdmin"
-        android:layout_width="229dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="694dp"
-        android:gravity="center_vertical"
-        android:text="Your Profile"
         android:textColor="#616161"
         android:textSize="20sp" />
 
@@ -215,16 +221,14 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/textSettings"
-        android:layout_width="134dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="331dp"
+        android:id="@+id/textCustomerData"
+        android:layout_width="152dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="570dp"
         android:gravity="center_vertical"
-        android:text="Settings"
+        android:text="Customer data"
         android:textColor="#616161"
-        android:textSize="26sp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>

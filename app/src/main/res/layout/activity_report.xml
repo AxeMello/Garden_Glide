@@ -125,59 +125,70 @@
                 android:textColor="#93ad94"
                 android:textSize="6sp" />
 
+
             <ImageView
-                android:id="@+id/humidityImage1"
-                android:layout_width="67dp"
-                android:layout_height="84dp"
+                android:id="@+id/Ghumidity"
+                android:layout_width="167dp"
+                android:layout_height="184dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="109.97dp"
+                android:layout_marginTop="160.01dp"
+                android:src="@drawable/Ghumidity" />
+
+            <ImageView
+                android:id="@+id/Gtemperature"
+                android:layout_width="167dp"
+                android:layout_height="184dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="109.97dp"
                 android:layout_marginTop="60.01dp"
-                android:src="@drawable/image" />
+                android:src="@drawable/Gtemperature" />
 
             <ImageView
-                android:id="@+id/humidityImage2"
-                android:layout_width="68dp"
-                android:layout_height="141dp"
+                android:id="@+id/Glight"
+                android:layout_width="167dp"
+                android:layout_height="184dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="199.03dp"
-                android:layout_marginTop="59.18dp"
-                android:src="@drawable/image"
-                android:background="@drawable/rounded_corner_image_background" />
+                android:layout_marginTop="159.18dp"
+                android:src="@drawable/Glight"/>
 
-        <LinearLayout
-            android:layout_width="334dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
-            android:orientation="horizontal"
-            android:weightSum="4">
+    <LinearLayout
+        android:layout_width="334dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
 
-            <ImageView
-                android:id="@+id/bottomImage1"
-                android:layout_width="0dp"
-                android:layout_height="22dp"
-                android:layout_weight="1"
-                android:src="@drawable/image" />
+        <ImageView
+            android:id="@+id/bottomImage1"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_weight="1"
+            android:src="@drawable/home" />
 
-            <ImageView
-                android:id="@+id/bottomImage2"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/image1" />
+        <ImageView
+            android:id="@+id/bottomImage2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera" />
 
-            <ImageView
-                android:id="@+id/bottomImage3"
-                android:layout_width="0dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:src="@drawable/image7" />
+        <ImageView
+            android:id="@+id/bottomImage3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/cart" />
 
-            <ImageView
-                android:id="@+id/bottomImage4"
-                android:layout_width="0dp"
-                android:layout_height="7dp"
-                android:layout_weight="1"
-                android:src="@drawable/image" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/bottomImage4"
+            android:layout_width="0dp"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:src="@drawable/dot" />
+    </LinearLayout>
 </RelativeLayout>

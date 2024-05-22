@@ -8,12 +8,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MarketplaceActivity extends AppCompatActivity {
+public class MarketActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_marketplace);
+        setContentView(R.layout.activity_market);
 
         // Initialize views
         ImageView user = findViewById(R.id.user);
