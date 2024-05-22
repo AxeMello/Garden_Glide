@@ -7,18 +7,18 @@
 
     <ImageView
         android:id="@+id/user"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="308dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="340dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/user"/>
 
     <ImageView
         android:id="@+id/ggtit"
         android:layout_width="198dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="28dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-40dp"
         android:src="@drawable/ggtit"/>
 
     <View
@@ -35,14 +35,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginEnd="157dp">
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="13dp">
 
         <TextView
             android:id="@+id/textMarkets"
             android:layout_width="88dp"
             android:layout_height="51dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="74dp"
+            android:layout_marginTop="480dp"
             android:layout_marginBottom="240dp"
             android:gravity="center_vertical"
             android:text="Markets"
@@ -71,6 +72,7 @@
             android:id="@+id/textBrand"
             android:layout_width="98dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="150"
             android:layout_marginEnd="73dp"
             android:layout_marginBottom="73dp"
             android:gravity="center_vertical"
@@ -82,6 +84,7 @@
             android:id="@+id/textDomains"
             android:layout_width="123dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
             android:layout_marginEnd="45dp"
             android:layout_marginBottom="158dp"
             android:gravity="center_vertical"
@@ -216,6 +219,8 @@
         android:layout_width="134dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="331dp"
         android:gravity="center_vertical"
         android:text="Settings"

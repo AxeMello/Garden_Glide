@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5ffec"
+    tools:context=".ReportActivity">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="198dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="31dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ggtit" />
+
+
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="74dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="180dp"
+            android:layout_marginTop="0dp"
+            android:text="Monstera"
+            android:textColor="#91a092"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/plantStatus"
+            android:layout_width="255dp"
+            android:layout_height="23dp"
+            android:layout_below="@id/plantName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:text="Your plant is looking good"
+            android:textColor="#727471"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/plantImage"
+            android:layout_width="54dp"
+            android:layout_height="58dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/image"
+            android:layout_marginEnd="270dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_image_background" />
+
+        <TextView
+            android:id="@+id/last30Days"
+            android:layout_width="159dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="135.65dp"
+            android:layout_marginTop="186.13dp"
+            android:text="Last 30 Days"
+            android:textColor="#788b78"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidityPercentage"
+            android:layout_width="84dp"
+            android:layout_height="58dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="208.64dp"
+            android:layout_marginTop="208.88dp"
+            android:text="60%"
+            android:textColor="#000000"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/humidityLabel"
+            android:layout_width="159dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="136dp"
+            android:layout_marginTop="263dp"
+            android:text="Humidity"
+            android:textColor="#6f726f"
+            android:textSize="31sp" />
+
+            <TextView
+                android:id="@+id/twLabel"
+                android:layout_width="17dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="135.51dp"
+                android:layout_marginTop="29.75dp"
+                android:text="TW"
+                android:textColor="#a3b9a2"
+                android:textSize="6sp" />
+
+            <TextView
+                android:id="@+id/oneMonthLabel"
+                android:layout_width="17dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="42.54dp"
+                android:layout_marginTop="29.75dp"
+                android:text="1M"
+                android:textColor="#91ad91"
+                android:textSize="9sp" />
+
+
+            <TextView
+                android:id="@+id/oneDayLabel"
+                android:layout_width="14dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="230.02dp"
+                android:layout_marginTop="29.75dp"
+                android:text="1D"
+                android:textColor="#93ad94"
+                android:textSize="6sp" />
+
+            <ImageView
+                android:id="@+id/humidityImage1"
+                android:layout_width="67dp"
+                android:layout_height="84dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="109.97dp"
+                android:layout_marginTop="60.01dp"
+                android:src="@drawable/image" />
+
+            <ImageView
+                android:id="@+id/humidityImage2"
+                android:layout_width="68dp"
+                android:layout_height="141dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="199.03dp"
+                android:layout_marginTop="59.18dp"
+                android:src="@drawable/image"
+                android:background="@drawable/rounded_corner_image_background" />
+
+        <LinearLayout
+            android:layout_width="334dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/bottomImage1"
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:src="@drawable/image" />
+
+            <ImageView
+                android:id="@+id/bottomImage2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image1" />
+
+            <ImageView
+                android:id="@+id/bottomImage3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/image7" />
+
+            <ImageView
+                android:id="@+id/bottomImage4"
+                android:layout_width="0dp"
+                android:layout_height="7dp"
+                android:layout_weight="1"
+                android:src="@drawable/image" />
+        </LinearLayout>
+</RelativeLayout>
