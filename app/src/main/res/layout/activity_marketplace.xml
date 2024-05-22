@@ -9,40 +9,37 @@
 
     <!-- Middle Texts -->
 
-    <RelativeLayout
-        android:layout_width="348dp"
-        android:layout_height="105dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="-18dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="348dp"
+            android:layout_height="105dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="198dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="-0dp"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ggtit" />
+
+        </RelativeLayout>
 
         <ImageView
             android:id="@+id/user"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="330dp"
-            android:layout_marginTop="37dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-40dp"
+            android:layout_marginTop="15dp"
             android:src="@drawable/user" />
 
-        <RelativeLayout
-            android:layout_width="278dp"
-            android:layout_height="71dp"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="22dp"
-            android:background="#80d8fdc1"
-            android:clipToOutline="true"
-            android:shapeRadius="40dp" />
-
-
-        <ImageView
-            android:layout_width="198dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="25dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ggtit" />
-    </RelativeLayout>
+    </LinearLayout>
 
     <TextView
         android:layout_width="208dp"
@@ -121,51 +118,58 @@
             android:layout_height="61dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="-4dp"
-            android:src="@drawable/image" />
+            android:src="@drawable/flag" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="360dp"
-        android:layout_height="34dp"
+    <View
+        android:id="@+id/navigation_bar_section"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="4dp"
-        android:background="#80d8fdc1">
+        android:alpha="0.5"
+        android:background="#FFD8FDC1" />
+
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="7dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="12dp"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/image" />
+            android:id="@+id/nav_icon_1"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="0dp"
+            android:contentDescription="Navigation Icon 1"
+            android:src="@drawable/home" />
 
         <ImageView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="215dp"
-            android:layout_marginBottom="4dp"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/image" />
+            android:id="@+id/nav_icon_2"
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:contentDescription="Navigation Icon 2"
+            android:src="@drawable/camera" />
 
         <ImageView
-            android:layout_width="22dp"
-            android:layout_height="23dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="120dp"
-            android:layout_marginBottom="4dp"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/image" />
+            android:id="@+id/nav_icon_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:contentDescription="Navigation Icon 3"
+            android:src="@drawable/cart" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="22dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="311dp"
-            android:layout_marginBottom="4dp"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/image" />
-    </RelativeLayout>
+            android:id="@+id/nav_icon_4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-7dp"
+            android:contentDescription="Navigation Icon 4"
+            android:src="@drawable/dot" />
+    </LinearLayout>
+
 
 </RelativeLayout>
