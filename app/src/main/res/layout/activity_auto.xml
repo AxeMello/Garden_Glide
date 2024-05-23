@@ -62,7 +62,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginRight="20dp"
         android:layout_height="40dp"
-        android:src="@drawable/topA" />
+/>        android:src="@drawable/topA" />
 
     <ImageView
         android:id="@+id/tick"
@@ -131,7 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="370dp"
             android:layout_marginStart="70dp"
-            android:text="2 days ago"
+            android:text= "2 days ago"
             android:textColor="#8fa491"
             android:textSize="12sp" />
 
