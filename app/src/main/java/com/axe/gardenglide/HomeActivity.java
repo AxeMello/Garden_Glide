@@ -13,7 +13,7 @@ public class HomeActivity extends AppCompatActivity { // or extends Activity if 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home); // Ensure you have this layout file
 
-        ImageView crop = findViewById(R.id.crop);
+        ImageView crop = findViewById(R.id.crop_recommended);
         crop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
