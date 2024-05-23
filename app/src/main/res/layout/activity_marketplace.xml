@@ -151,7 +151,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="80dp"
             android:contentDescription="Navigation Icon 2"
-            android:src="@drawable/camera" />
+            android:src="@drawable/market" />
 
         <ImageView
             android:id="@+id/nav_icon_3"
@@ -159,7 +159,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="80dp"
             android:contentDescription="Navigation Icon 3"
-            android:src="@drawable/cart" />
+            android:src="@drawable/tag" />
 
         <ImageView
             android:id="@+id/nav_icon_4"

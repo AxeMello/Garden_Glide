@@ -49,23 +49,23 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/firstImage"
+        android:id="@+id/check"
         android:layout_width="31dp"
         android:layout_height="28dp"
         android:layout_marginTop="90dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/check"/>
 
     <ImageView
-        android:id="@+id/firstImage"
+        android:id="@+id/cross"
         android:layout_width="31dp"
         android:layout_height="28dp"
         android:layout_marginTop="90dp"
         android:layout_marginStart="350dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/cross"/>
 
     <TextView
         android:id="@+id/activeText"
@@ -90,30 +90,30 @@
         android:textSize="20sp" />
 
     <ImageView
-        android:id="@+id/firstImage"
-        android:layout_width="90dp"
+        android:id="@+id/addimage"
+        android:layout_width="124dp"
         android:layout_height="80dp"
-        android:layout_marginTop="175dp"
+        android:layout_marginTop="170dp"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/addimage"/>
 
     <ImageView
-        android:id="@+id/firstImage"
+        android:id="@+id/plus"
         android:layout_width="31dp"
         android:layout_height="28dp"
         android:layout_marginTop="290dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/plus"/>
 
     <TextView
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="292dp"
         android:text="Add description"
         android:textColor="#8b8b8b"
         android:textSize="19sp"
@@ -139,7 +139,7 @@
         <TextView
             android:layout_width="177dp"
             android:layout_height="21dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="55dp"
             android:layout_marginTop="40dp"
             android:gravity="center_vertical"
             android:text="Online Store"
@@ -148,23 +148,23 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/firstImage"
+            android:id="@+id/greendot"
             android:layout_width="31dp"
             android:layout_height="28dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="37dp"
             android:layout_marginEnd="34dp"
             android:layout_marginBottom="17dp"
-            android:src="@drawable/image" />
+            android:src="@drawable/greendot" />
 
         <ImageView
-            android:id="@+id/firstImage"
+            android:id="@+id/orangedot"
             android:layout_width="31dp"
             android:layout_height="28dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginTop="67dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="34dp"
-            android:src="@drawable/image"/>
+            android:src="@drawable/orangedot"/>
 
         <TextView
             android:layout_width="177dp"
@@ -211,14 +211,15 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/firstImage"
+        android:id="@+id/plus"
         android:layout_width="31dp"
         android:layout_height="28dp"
         android:layout_marginTop="550dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/plus"
+        tools:ignore="DuplicateIds" />
 
     <TextView
         android:layout_width="150dp"
@@ -271,19 +272,19 @@
         android:textSize="20sp" />
 
     <ImageView
-        android:id="@+id/firstImage"
+        android:id="@+id/truck"
         android:layout_width="31dp"
         android:layout_height="28dp"
-        android:layout_marginTop="715dp"
+        android:layout_marginTop="717dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/truck"/>
 
     <TextView
         android:layout_width="177dp"
         android:layout_height="21dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="720dp"
         android:gravity="center_vertical"
         android:text="Shipping"
@@ -292,19 +293,19 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/firstImage"
+        android:id="@+id/prod"
         android:layout_width="31dp"
         android:layout_height="28dp"
-        android:layout_marginTop="755dp"
+        android:layout_marginTop="757dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/prod"/>
 
     <TextView
         android:layout_width="177dp"
         android:layout_height="21dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="760dp"
         android:gravity="center_vertical"
         android:text="Product Organization"
@@ -313,19 +314,19 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/firstImage"
+        android:id="@+id/collect"
         android:layout_width="31dp"
         android:layout_height="28dp"
-        android:layout_marginTop="795dp"
+        android:layout_marginTop="797dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="17dp"
-        android:src="@drawable/image"/>
+        android:src="@drawable/collect"/>
 
     <TextView
         android:layout_width="177dp"
         android:layout_height="21dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="800dp"
         android:gravity="center_vertical"
         android:text="Collections"
@@ -336,7 +337,7 @@
     <TextView
         android:layout_width="177dp"
         android:layout_height="21dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="820dp"
         android:gravity="center_vertical"
         android:text="Home Page"

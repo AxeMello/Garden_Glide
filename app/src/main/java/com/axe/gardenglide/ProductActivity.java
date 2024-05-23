@@ -20,7 +20,6 @@ public class ProductActivity extends AppCompatActivity {
         ImageView product = findViewById(R.id.product);
         ImageView user = findViewById(R.id.user);
         ImageView background = findViewById(R.id.background);
-        ImageView ggtit = findViewById(R.id.ggtit);
 
     }
 }

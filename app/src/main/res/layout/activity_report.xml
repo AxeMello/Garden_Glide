@@ -43,9 +43,8 @@
         android:id="@+id/plantName"
         android:layout_width="74dp"
         android:layout_height="20dp"
-        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="160dp"
-        android:layout_marginEnd="290dp"
         android:text="Monstera"
         android:textColor="#91a092"
         android:textSize="16sp" />
