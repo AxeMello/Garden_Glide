@@ -68,12 +68,12 @@
         android:src="@drawable/tick" />
 
     <ImageView
-        android:id="@+id/Ghumidity"
+        android:id="@+id/ghumidity"
         android:layout_width="267dp"
         android:layout_height="284dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="200dp"
-        android:src="@drawable/Ghumidity" />
+        android:src="@drawable/ghumidity" />
 
     <TextView
         android:id="@+id/last30Days"
@@ -151,7 +151,7 @@
         android:layout_height="284dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="500dp"
-        android:src="@drawable/Glight" />
+        android:src="@drawable/glight" />
 
     <TextView
         android:id="@+id/last30Days"
@@ -211,7 +211,7 @@
         android:layout_height="284dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="800dp"
-        android:src="@drawable/Gtemperature" />
+        android:src="@drawable/gtemperature" />
 
     <TextView
         android:id="@+id/last30Days"

@@ -19,8 +19,6 @@ public class ScanActivity extends AppCompatActivity {
         topAppBar.setTitle("Recent Scans");
 
         // Set images
-        ImageView ggtit = findViewById(R.id.ggtit);
-        ggtit.setImageResource(R.drawable.ggtit);
 
         ImageView user = findViewById(R.id.user);
         user.setImageResource(R.drawable.user);

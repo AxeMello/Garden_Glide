@@ -117,14 +117,13 @@
             android:layout_alignParentTop="true">
 
             <ImageView
-                android:id="@+id/image4"
+                android:id="@+id/ggtit"
                 android:layout_width="198dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="-0dp"
                 android:layout_marginStart="20dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ggtit" />
-
         </RelativeLayout>
 
         <ImageView

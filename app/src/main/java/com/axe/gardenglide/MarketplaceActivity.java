@@ -1,5 +1,6 @@
 package com.axe.gardenglide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,6 +15,31 @@ public class MarketplaceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_marketplace);
+
+        ImageView nav_icon_2 = findViewById(R.id.nav_icon_2);
+        nav_icon_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MarketplaceActivity.this, ProductActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView nav_icon_3 = findViewById(R.id.nav_icon_3);
+        nav_icon_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MarketplaceActivity.this, AddproductActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView nav_icon_4 = findViewById(R.id.nav_icon_4);
+        nav_icon_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MarketplaceActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Initialize views
         ImageView user = findViewById(R.id.user);
