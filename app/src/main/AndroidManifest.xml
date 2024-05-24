@@ -37,5 +37,50 @@
             android:exported="true">
         </activity>
 
+        <activity
+            android:name=".AddproductActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".AutoActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".CameraActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".CroprecommendActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".MarketplaceActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ProductActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ReportActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".ScanActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 </manifest>

@@ -221,12 +221,13 @@
             android:src="@drawable/cam" />
 
         <ImageView
-            android:id="@+id/nav_icon_3"
+            android:id="@+id/analysIS"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_marginTop="-2dp"
             android:layout_marginStart="80dp"
             android:contentDescription="Navigation Icon 3"
-            android:src="@drawable/tag" />
+            android:src="@drawable/analysis" />
 
         <ImageView
             android:id="@+id/nav_icon_4"
