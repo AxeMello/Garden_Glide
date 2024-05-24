@@ -15,6 +15,8 @@ public class AddproductActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addproduct);
 
+
+
         // Initialize views
         ImageView user = findViewById(R.id.user);
         ImageView image4 = findViewById(R.id.image4);
