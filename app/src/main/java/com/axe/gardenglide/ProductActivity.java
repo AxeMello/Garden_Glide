@@ -1,6 +1,8 @@
 package com.axe.gardenglide;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +15,15 @@ public class ProductActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
+
+        ImageView background = findViewById(R.id.background);
+        background.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProductActivity.this, AddproductActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // Initialize views if necessary
 //        TextView textView = findViewById(R.id.textView);
