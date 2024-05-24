@@ -1,10 +1,9 @@
 package com.axe.gardenglide;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,23 +14,52 @@ public class AddproductActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addproduct);
 
-        // Initialize views
-        ImageView user = findViewById(R.id.user);
-        ImageView image4 = findViewById(R.id.image4);
 
-        // Set click listener for user image
-        user.setOnClickListener(new View.OnClickListener() {
+        ImageView home= findViewById(R.id.homee);
+        home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle user image click logic here
+                Intent intent = new Intent(AddproductActivity.this, HomeActivity.class);
+                startActivity(intent);
             }
         });
 
-        // Set click listener for image 4
-        image4.setOnClickListener(new View.OnClickListener() {
+        ImageView camera= findViewById(R.id.camera);
+        camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle image 4 click logic here
+                Intent intent = new Intent(AddproductActivity.this, ScanActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageView cart= findViewById(R.id.cartin);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddproductActivity.this, MarketplaceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView sett= findViewById(R.id.nav_icon_4);
+        sett.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddproductActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        // Set click listener for image 4
+        ImageView userb= findViewById(R.id.user);
+        userb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddproductActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
     }

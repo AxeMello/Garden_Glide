@@ -1,6 +1,9 @@
 package com.axe.gardenglide;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
@@ -9,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class ScanActivity extends AppCompatActivity {
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,12 +42,19 @@ public class ScanActivity extends AppCompatActivity {
         ImageView image = findViewById(R.id.image);
         image.setImageResource(R.drawable.image);
 
-        ImageView cam = findViewById(R.id.cam);
-        cam.setImageResource(R.drawable.cam);
-
         ImageView reload = findViewById(R.id.reload);
         reload.setImageResource(R.drawable.reload);
 
         // You can set other images and texts similarly
+
+        ImageView came;
+        came = findViewById(R.id.came);
+        came.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ScanActivity.this, CameraActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

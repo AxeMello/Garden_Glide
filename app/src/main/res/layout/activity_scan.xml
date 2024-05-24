@@ -145,7 +145,7 @@
     <!-- Bottom Section with Diagnostic Instruction -->
 
     <ImageView
-        android:id="@+id/cam"
+        android:id="@+id/came"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="200dp"

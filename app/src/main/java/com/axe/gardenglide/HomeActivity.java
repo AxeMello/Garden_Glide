@@ -11,10 +11,19 @@ public class HomeActivity extends AppCompatActivity { // or extends Activity if 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home); // Ensure you have this layout file
+        setContentView(R.layout.activity_home);
 
-        ImageView crop = findViewById(R.id.crop_recommended);
-        crop.setOnClickListener(new View.OnClickListener() {
+        ImageView user= findViewById(R.id.user);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ReportActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView cropR= findViewById(R.id.cropr);
+        cropR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, CroprecommendActivity.class);
@@ -22,8 +31,8 @@ public class HomeActivity extends AppCompatActivity { // or extends Activity if 
             }
         });
 
-        ImageView cam = findViewById(R.id.cam);
-        crop.setOnClickListener(new View.OnClickListener() {
+        ImageView cam = findViewById(R.id.came);
+        cam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, ScanActivity.class);
@@ -31,5 +40,32 @@ public class HomeActivity extends AppCompatActivity { // or extends Activity if 
             }
         });
 
+        ImageView analysis= findViewById(R.id.analysis);
+        analysis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ReportActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView userb= findViewById(R.id.user);
+        userb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView nav_icon_4 = findViewById(R.id.nav_icon_4);
+        nav_icon_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MarketplaceActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 }

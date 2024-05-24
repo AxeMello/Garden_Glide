@@ -32,6 +32,25 @@ public class MarketplaceActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView nav_icon_1 = findViewById(R.id.nav_icon_1);
+        nav_icon_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MarketplaceActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView user = findViewById(R.id.user);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MarketplaceActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         ImageView nav_icon_4 = findViewById(R.id.nav_icon_4);
         nav_icon_4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +61,6 @@ public class MarketplaceActivity extends AppCompatActivity {
         });
 
         // Initialize views
-        ImageView user = findViewById(R.id.user);
         ImageView image4 = findViewById(R.id.image4);
 
         // Set click listener for user image

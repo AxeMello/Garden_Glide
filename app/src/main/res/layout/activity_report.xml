@@ -1,368 +1,353 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f5ffec"
     tools:context=".ReportActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:layout_width="348dp"
-            android:layout_height="105dp"
-            android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="348dp"
+                android:layout_height="105dp"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="198dp"
+                    android:layout_height="65dp"
+                    android:layout_marginTop="-0dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ggtit" />
+
+            </RelativeLayout>
 
             <ImageView
-                android:id="@+id/image4"
-                android:layout_width="198dp"
-                android:layout_height="65dp"
-                android:layout_marginTop="-0dp"
-                android:layout_marginStart="20dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ggtit" />
+                android:id="@+id/user"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/user" />
 
-        </RelativeLayout>
+        </LinearLayout>
 
-        <ImageView
-            android:id="@+id/user"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="-40dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/user" />
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="74dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="160dp"
+            android:text="Monstera"
+            android:textColor="#91a092"
+            android:textSize="16sp" />
 
-    </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/plantName"
-        android:layout_width="74dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="160dp"
-        android:text="Monstera"
-        android:textColor="#91a092"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/plantStatus"
-        android:layout_width="255dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="135dp"
-        android:text="Your plant is looking good"
-        android:textColor="#727471"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:id="@+id/plantImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="130dp"
-        android:src="@drawable/tick" />
-
-    <ImageView
-        android:id="@+id/ghumidity"
-        android:layout_width="267dp"
-        android:layout_height="284dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/ghumidity" />
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="159dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="280dp"
-        android:text="Last 30 Days"
-        android:textColor="#788b78"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/humidityPercentage"
-        android:layout_width="84dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="245dp"
-        android:text="60%"
-        android:textColor="#000000"
-        android:textSize="31sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/humidityLabel"
-        android:layout_width="159dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="210dp"
-        android:text="Humidity"
-        android:textColor="#6f726f"
-        android:textSize="31sp" />
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="460dp"
-        android:text="1D"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="460dp"
-        android:text="TW"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="460dp"
-        android:text="1M"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-    <View
-        android:id="@+id/navigation_bar_section"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:layout_alignParentBottom="true"
-        android:alpha="0.5"
-        android:background="#FFD8FDC1" />
-
-    <ImageView
-        android:id="@+id/Gtemperature"
-        android:layout_width="267dp"
-        android:layout_height="284dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="500dp"
-        android:src="@drawable/glight" />
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="159dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="550dp"
-        android:text="Last 30 Days"
-        android:textColor="#788b78"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/humidityLabel"
-        android:layout_width="190dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="510dp"
-        android:text="Fertility"
-        android:textColor="#6f726f"
-        android:textSize="31sp" />
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="760dp"
-        android:text="1D"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="760dp"
-        android:text="TW"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="760dp"
-        android:text="1M"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-
-    <ImageView
-        android:id="@+id/Gtemperature"
-        android:layout_width="267dp"
-        android:layout_height="284dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="800dp"
-        android:src="@drawable/gtemperature" />
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="159dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="900dp"
-        android:text="Last 30 Days"
-        android:textColor="#788b78"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/humidityPercentage"
-        android:layout_width="84dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="860dp"
-        android:text="68F"
-        android:textColor="#000000"
-        android:textSize="31sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/humidityLabel"
-        android:layout_width="190dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="820dp"
-        android:text="Temperature"
-        android:textColor="#6f726f"
-        android:textSize="31sp" />
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="1060dp"
-        android:text="1D"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="1060dp"
-        android:text="TW"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-
-    <TextView
-        android:id="@+id/twLabel"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="1060dp"
-        android:text="1M"
-        android:textColor="#a3b9a2"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/humidityLabel"
-        android:layout_width="190dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="1120dp"
-        android:text="What to Know"
-        android:textColor="#6f726f"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="270dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="1160dp"
-        android:text="Keep soil damp, but not too wet"
-        android:textColor="#788b78"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="259dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="1200dp"
-        android:text="Prefers bright, indirect light"
-        android:textColor="#788b78"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="400dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="1240dp"
-        android:text="Fertilize once a month in spring and summer"
-        android:textColor="#788b78"
-        android:textSize="18sp" />
-
-    <View
-        android:id="@+id/navigation_bar_section"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:layout_alignParentBottom="true"
-        android:alpha="0.5"
-        android:background="#FFD8FDC1" />
-
-    <LinearLayout
-        android:id="@+id/navigation_bar"
-        android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/plantStatus"
+            android:layout_width="255dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="135dp"
+            android:text="Your plant is looking good"
+            android:textColor="#727471"
+            android:textSize="20sp" />
 
         <ImageView
-            android:id="@+id/nav_icon_1"
-            android:layout_width="30dp"
+            android:id="@+id/plantImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/tick" />
+
+        <ImageView
+            android:id="@+id/ghumidity"
+            android:layout_width="267dp"
+            android:layout_height="284dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/ghumidity" />
+
+        <TextView
+            android:id="@+id/last30Days"
+            android:layout_width="159dp"
             android:layout_height="32dp"
-            android:layout_marginStart="0dp"
-            android:contentDescription="Navigation Icon 1"
-            android:src="@drawable/home" />
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="280dp"
+            android:text="Last 30 Days"
+            android:textColor="#788b78"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/humidityPercentage"
+            android:layout_width="84dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="245dp"
+            android:text="60%"
+            android:textColor="#000000"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/humidityLabel"
+            android:layout_width="159dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="210dp"
+            android:text="Humidity"
+            android:textColor="#6f726f"
+            android:textSize="31sp" />
+
+        <TextView
+            android:id="@+id/tw1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="460dp"
+            android:text="1D"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tw2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="460dp"
+            android:text="TW"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tw3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="460dp"
+            android:text="1M"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
 
         <ImageView
-            android:id="@+id/nav_icon_2"
-            android:layout_width="34dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="80dp"
-            android:contentDescription="Navigation Icon 2"
-            android:src="@drawable/camera" />
+            android:id="@+id/Gtemperature"
+            android:layout_width="267dp"
+            android:layout_height="284dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="500dp"
+            android:src="@drawable/glight" />
+
+        <TextView
+            android:id="@+id/last2"
+            android:layout_width="159dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="550dp"
+            android:text="Last 30 Days"
+            android:textColor="#788b78"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/h2"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="510dp"
+            android:text="Fertility"
+            android:textColor="#6f726f"
+            android:textSize="31sp" />
+
+        <TextView
+            android:id="@+id/tw4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="760dp"
+            android:text="1D"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tw5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="760dp"
+            android:text="TW"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tw6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="760dp"
+            android:text="1M"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
 
         <ImageView
-            android:id="@+id/nav_icon_3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="80dp"
-            android:contentDescription="Navigation Icon 3"
-            android:src="@drawable/cart" />
+            android:id="@+id/g2"
+            android:layout_width="267dp"
+            android:layout_height="284dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="800dp"
+            android:src="@drawable/gtemperature" />
 
-        <ImageView
-            android:id="@+id/nav_icon_4"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="-7dp"
-            android:contentDescription="Navigation Icon 4"
-            android:src="@drawable/dot" />
-    </LinearLayout>
-</RelativeLayout>
+        <TextView
+            android:id="@+id/last3"
+            android:layout_width="159dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="900dp"
+            android:text="Last 30 Days"
+            android:textColor="#788b78"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hp2"
+            android:layout_width="84dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="860dp"
+            android:text="68F"
+            android:textColor="#000000"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hl3"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="820dp"
+            android:text="Temperature"
+            android:textColor="#6f726f"
+            android:textSize="31sp" />
+
+        <TextView
+            android:id="@+id/tw7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="1060dp"
+            android:text="1D"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tw8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="1060dp"
+            android:text="TW"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tw9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="1060dp"
+            android:text="1M"
+            android:textColor="#a3b9a2"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/h4"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1120dp"
+            android:text="What to Know"
+            android:textColor="#6f726f"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/last4"
+            android:layout_width="270dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="1160dp"
+            android:text="Keep soil damp, but not too wet"
+            android:textColor="#788b78"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/last5"
+            android:layout_width="400dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="1200dp"
+            android:text="Fertilize once a month in spring and summer"
+            android:textColor="#788b78"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/last6"
+            android:layout_width="400dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="1240dp"
+            android:textColor="#788b78"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#FFD8FDC1"
+            android:alpha="0.5">
+
+            <ImageView
+                android:id="@+id/nav_icon_1"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="0dp"
+                android:contentDescription="Navigation Icon 1"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/nav_icon_2"
+                android:layout_width="34dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                android:contentDescription="Navigation Icon 2"
+                android:src="@drawable/camera" />
+
+            <ImageView
+                android:id="@+id/nav_icon_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                android:contentDescription="Navigation Icon 3"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/nav_icon_4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="-7dp"
+                android:contentDescription="Navigation Icon 4"
+                android:src="@drawable/dot" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

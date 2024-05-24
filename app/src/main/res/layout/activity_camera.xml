@@ -11,8 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Select Image"
-        android:layout_gravity="center_horizontal"
-        android:marginBottom="16dp" />
+        android:layout_gravity="center_horizontal"/>
 
     <!-- ImageView to display selected image -->
     <ImageView
@@ -21,9 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside"
-        android:marginBottom="16dp" />
-
+        android:scaleType="centerInside"/>
     <!-- TextView to display prediction result -->
     <TextView
         android:id="@+id/predictionTextView"
