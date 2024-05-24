@@ -38,20 +38,22 @@ public class SettingActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        // Initialize your views
-        TextView textMarkets = findViewById(R.id.textMarkets);
-        TextView textBrand = findViewById(R.id.textBrand);
-        TextView textDomains = findViewById(R.id.textDomains);
-        TextView textCustomerData = findViewById(R.id.textCustomerData);
-        TextView textSettings = findViewById(R.id.textSettings);
-        TextView textNotification = findViewById(R.id.textNotification);
-        TextView textLanguages = findViewById(R.id.textLanguages);
-        TextView textCustomerPrivacy = findViewById(R.id.textCustomerPrivacy);
-        TextView textPolicies = findViewById(R.id.textPolicies);
-        TextView textGardenGlideAdmin = findViewById(R.id.textGardenGlideAdmin);
-
+        ImageView nav_icon_1 = findViewById(R.id.nav_icon_1);
+        nav_icon_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         ImageView user = findViewById(R.id.user);
-        ImageView image4 = findViewById(R.id.image4);
-}
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SettingActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+    }
 }
