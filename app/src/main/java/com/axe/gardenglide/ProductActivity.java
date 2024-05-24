@@ -24,13 +24,39 @@ public class ProductActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        // Initialize views if necessary
-//        TextView textView = findViewById(R.id.textView);
-
-        ImageView product = findViewById(R.id.product);
+        ImageView nav_icon_1 = findViewById(R.id.nav_icon_1);
+        nav_icon_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProductActivity.this,
+                        HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView nav_icon_3 = findViewById(R.id.nav_icon_3);
+        nav_icon_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProductActivity.this, AddproductActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView nav_icon_4 = findViewById(R.id.nav_icon_4);
+        nav_icon_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProductActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
         ImageView user = findViewById(R.id.user);
-        ImageView background = findViewById(R.id.background);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProductActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

@@ -2,6 +2,7 @@ package com.axe.gardenglide;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import org.tensorflow.lite.Interpreter;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.MappedByteBuffer;
@@ -52,23 +54,12 @@ public class CameraActivity extends AppCompatActivity {
 
     // Function to load TensorFlow Lite model file
     private MappedByteBuffer loadModelFile() throws IOException {
-        FileInputStream inputStream = null;
-        FileChannel fileChannel = null;
-        try {
-            android.content.res.AssetFileDescriptor fileDescriptor = getAssets().openFd("model.tflite");
-            inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
-            fileChannel = inputStream.getChannel();
-            long startOffset = fileDescriptor.getStartOffset();
-            long declaredLength = fileDescriptor.getDeclaredLength();
-            return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
-        } finally {
-            if (inputStream != null) {
-                inputStream.close();
-            }
-            if (fileChannel != null) {
-                fileChannel.close();
-            }
-        }
+        AssetFileDescriptor fileDescriptor = getAssets().openFd("version_3.tflite");
+        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
+        FileChannel fileChannel = inputStream.getChannel();
+        long startOffset = fileDescriptor.getStartOffset();
+        long declaredLength = fileDescriptor.getDeclaredLength();
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
     }
 
     // Function to select image from device's file system
@@ -84,7 +75,7 @@ public class CameraActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1 && resultCode == Activity.RESULT_OK && data != null && data.getData() != null) {
             try {
-                FileInputStream inputStream = (FileInputStream) getContentResolver().openInputStream(data.getData());
+                InputStream inputStream = getContentResolver().openInputStream(data.getData());
                 Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                 imageView.setImageBitmap(bitmap);
 
@@ -99,6 +90,10 @@ public class CameraActivity extends AppCompatActivity {
 
     // Function to perform inference on image
     private String performInference(Bitmap bitmap) {
+        if (tflite == null) {
+            return "Model not initialized";
+        }
+
         // Resize the bitmap to the input size of the model
         Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true);
 
@@ -113,8 +108,15 @@ public class CameraActivity extends AppCompatActivity {
 
         // Interpret the result (assuming binary classification)
         float prediction = output[0][0];
-        return prediction > 0.5 ? "Class A" : "Class B";
+
+        // Check if prediction is valid
+        if (Float.isNaN(prediction)) {
+            return "Unable to detect";
+        } else {
+            return prediction > 0.5 ? "Class A" : "Class B";
+        }
     }
+
 
     private ByteBuffer convertBitmapToByteBuffer(Bitmap bitmap) {
         ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * 224 * 224 * 3);
@@ -122,9 +124,9 @@ public class CameraActivity extends AppCompatActivity {
         int[] intValues = new int[224 * 224];
         bitmap.getPixels(intValues, 0, 224, 0, 0, 224, 224);
         for (int pixel : intValues) {
-            byteBuffer.putFloat(((pixel >> 16) & 0xFF) / 255.0f);
-            byteBuffer.putFloat(((pixel >> 8) & 0xFF) / 255.0f);
-            byteBuffer.putFloat((pixel & 0xFF) / 255.0f);
+            byteBuffer.putFloat(((pixel >> 16) & 0xFF) / 255.0f); // R
+            byteBuffer.putFloat(((pixel >> 8) & 0xFF) / 255.0f);  // G
+            byteBuffer.putFloat((pixel & 0xFF) / 255.0f);         // B
         }
         return byteBuffer;
     }

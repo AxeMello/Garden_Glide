@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFF5FFEC"
     android:padding="16dp">
 
     <!-- Button to select image -->
@@ -21,6 +22,7 @@
         android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"/>
+
     <!-- TextView to display prediction result -->
     <TextView
         android:id="@+id/predictionTextView"
