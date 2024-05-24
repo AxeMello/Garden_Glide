@@ -18,34 +18,40 @@ public class ScanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
 
-        // Set the top app bar title
-        Toolbar topAppBar = findViewById(R.id.topAppBar);
-        topAppBar.setTitle("Recent Scans");
 
-        // Set images
+        ImageView nav_icon_1 = findViewById(R.id.nav_icon_1);
+        nav_icon_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ScanActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        ImageView user = findViewById(R.id.user);
-        user.setImageResource(R.drawable.user);
-
-        ImageView navIcon1 = findViewById(R.id.nav_icon_1);
-        navIcon1.setImageResource(R.drawable.home);
-
-        ImageView navIcon2 = findViewById(R.id.nav_icon_2);
-        navIcon2.setImageResource(R.drawable.camera);
-
-        ImageView navIcon3 = findViewById(R.id.nav_icon_3);
-        navIcon3.setImageResource(R.drawable.cart);
-
-        ImageView navIcon4 = findViewById(R.id.nav_icon_4);
-        navIcon4.setImageResource(R.drawable.dot);
-
-        ImageView image = findViewById(R.id.image);
-        image.setImageResource(R.drawable.image);
-
-        ImageView reload = findViewById(R.id.reload);
-        reload.setImageResource(R.drawable.reload);
-
-        // You can set other images and texts similarly
+        ImageView nav_icon_3 = findViewById(R.id.nav_icon_3);
+        nav_icon_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ScanActivity.this, MarketplaceActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView nav_icon_4= findViewById(R.id.nav_icon_4);
+        nav_icon_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ScanActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView profile = findViewById(R.id.user);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ScanActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         ImageView came;
         came = findViewById(R.id.came);

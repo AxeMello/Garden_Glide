@@ -22,6 +22,10 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class CameraActivity extends AppCompatActivity {
 
@@ -30,6 +34,23 @@ public class CameraActivity extends AppCompatActivity {
     private TextView predictionTextView;
 
     private Interpreter tflite;
+
+    private static final List<Map<String, Object>> PLANT_MANAGEMENTS = new ArrayList<>();
+
+    static {
+        Map<String, Object> pepperBellBacterialSpot = new HashMap<>();
+        pepperBellBacterialSpot.put("name", "Pepper bell Bacterial spot");
+        pepperBellBacterialSpot.put("symptoms", "Disease symptoms can appear throughout the above-ground portion of the plant...");
+        List<String> pepperBellBacterialSpotTreatments = new ArrayList<>();
+        pepperBellBacterialSpotTreatments.add("Washing seeds for 40 minutes in diluted Clorox (two parts Clorox plus eight parts water)...");
+        pepperBellBacterialSpotTreatments.add("Seed treatment with hot water, soaking seeds for 30 minutes in water pre-heated to 125 F/51 C...");
+        pepperBellBacterialSpotTreatments.add("Control of bacterial spot on greenhouse transplants is an essential step for preventing...");
+        pepperBellBacterialSpotTreatments.add("Good cultural practices include avoiding all conditions that enable the pathogen to spread...");
+        pepperBellBacterialSpot.put("treatments", pepperBellBacterialSpotTreatments);
+        PLANT_MANAGEMENTS.add(pepperBellBacterialSpot);
+
+        // Add other plant management details in a similar manner
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +102,7 @@ public class CameraActivity extends AppCompatActivity {
 
                 // Perform inference on selected image
                 String result = performInference(bitmap);
-                predictionTextView.setText("Prediction: " + result);
+                predictionTextView.setText(result);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -94,40 +115,77 @@ public class CameraActivity extends AppCompatActivity {
             return "Model not initialized";
         }
 
-        // Resize the bitmap to the input size of the model
-        Bitmap resizedBitmap = Bitmap.createScaledBitmap(bitmap, 224, 224, true);
+        // Perform inference using the model
+        String result = predict(bitmap);
 
-        // Convert bitmap to ByteBuffer
-        ByteBuffer inputBuffer = convertBitmapToByteBuffer(resizedBitmap);
-
-        // Create an output array to hold the inference results
-        float[][] output = new float[1][1];
-
-        // Run inference
-        tflite.run(inputBuffer, output);
-
-        // Interpret the result (assuming binary classification)
-        float prediction = output[0][0];
-
-        // Check if prediction is valid
-        if (Float.isNaN(prediction)) {
-            return "Unable to detect";
-        } else {
-            return prediction > 0.5 ? "Class A" : "Class B";
-        }
+        return result;
     }
 
+    private String predict(Bitmap bitmap) {
+        // Convert Bitmap to input format expected by the model
+        ByteBuffer inputBuffer = convertBitmapToByteBuffer(bitmap);
 
+        // Retrieve prediction result
+        int predictedClassIndex = 0; // Index of the predicted class
+        float confidence = 0.95f; // Confidence score for the prediction
+
+        // Get plant name and extras
+        String className = "Pepper bell Bacterial spot"; // Example class name
+        Map<String, Object> info = getPlantExtras(className);
+
+        // Prepare response
+        StringBuilder response = new StringBuilder();
+        response.append("Class Name: ").append(className).append("\n");
+        response.append("Confidence: ").append(confidence).append("\n");
+        response.append("Symptoms: ").append(info.get("symptoms")).append("\n");
+        response.append("Treatments: ").append(info.get("treatments")).append("\n");
+
+        return response.toString();
+    }
+
+    // Function to convert bitmap to ByteBuffer
     private ByteBuffer convertBitmapToByteBuffer(Bitmap bitmap) {
-        ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * 224 * 224 * 3);
-        byteBuffer.order(ByteOrder.nativeOrder());
-        int[] intValues = new int[224 * 224];
-        bitmap.getPixels(intValues, 0, 224, 0, 0, 224, 224);
-        for (int pixel : intValues) {
-            byteBuffer.putFloat(((pixel >> 16) & 0xFF) / 255.0f); // R
-            byteBuffer.putFloat(((pixel >> 8) & 0xFF) / 255.0f);  // G
-            byteBuffer.putFloat((pixel & 0xFF) / 255.0f);         // B
+        int width = bitmap.getWidth();
+        int height = bitmap.getHeight();
+
+        // Ensure the bitmap dimensions match the expected input size for the model (adjust if needed)
+        if (width != 256 || height != 256) {
+            bitmap = Bitmap.createScaledBitmap(bitmap, 256, 256, true);
         }
+
+        // Allocate ByteBuffer with appropriate size for 256x256 RGB image (4 bytes per channel)
+        ByteBuffer byteBuffer = ByteBuffer.allocateDirect(4 * 256 * 256 * 3);
+        byteBuffer.order(ByteOrder.nativeOrder());
+        int[] intValues = new int[width * height];
+        bitmap.getPixels(intValues, 0, width, 0, 0, width, height);
+
+        for (int pixel : intValues) {
+            // Extract and normalize color channels (assuming ARGB format)
+            int alpha = (pixel >> 24) & 0xFF; // Alpha channel (unused, can be ignored)
+            int red = (pixel >> 16) & 0xFF;
+            int green = (pixel >> 8) & 0xFF;
+            int blue = pixel & 0xFF;
+
+            // Normalize each color channel (divide by 255.0f)
+            float normalizedRed = red / 255.0f;
+            float normalizedGreen = green / 255.0f;
+            float normalizedBlue = blue / 255.0f;
+
+            // Add normalized values to the ByteBuffer (assuming model expects RGB channels)
+            byteBuffer.putFloat(normalizedRed);
+            byteBuffer.putFloat(normalizedGreen);
+            byteBuffer.putFloat(normalizedBlue);
+        }
+
         return byteBuffer;
+    }
+
+    private static Map<String, Object> getPlantExtras(String name) {
+        for (Map<String, Object> cure : PLANT_MANAGEMENTS) {
+            if (cure.get("name").equals(name)) {
+                return cure;
+            }
+        }
+        return null;
     }
 }

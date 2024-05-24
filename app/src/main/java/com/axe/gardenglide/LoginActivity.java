@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
 
         Button loginButton = findViewById(R.id.loginButton);
         TextView signupText = findViewById(R.id.signupText);
-        TextView forgotPasswordText = findViewById(R.id.forgotPasswordText);
+        ImageView arrow = findViewById(R.id.arrow);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +35,11 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        forgotPasswordText.setOnClickListener(new View.OnClickListener() {
+        arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle forgot password logic here
+                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(intent);
             }
         });
     }
