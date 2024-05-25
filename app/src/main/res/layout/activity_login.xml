@@ -34,6 +34,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="139dp"
         android:gravity="center"
+        android:fontFamily="@font/alata"
         android:text="@string/welcome_back"
         android:textColor="#121712"
         android:textSize="30sp"
@@ -52,6 +53,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
             android:text="@string/username"
             android:textColor="#3D3D3D"
             android:textSize="16sp"/>
@@ -70,6 +72,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
             android:text="@string/password"
             android:textColor="#3D3D3D"
             android:textSize="16sp"/>

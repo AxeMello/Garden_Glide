@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="butG">#46D146</color>
     <color name="midG">#D8FDC1</color>
+    <color name="theme">#1B571E</color>
+
 </resources>

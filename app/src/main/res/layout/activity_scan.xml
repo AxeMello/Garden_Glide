@@ -62,64 +62,19 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="452dp"
+        android:layout_marginTop="470dp"
         android:src="@drawable/spid"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textGardenGlideAdmin"
-        android:layout_width="229dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="16dp"
-        android:text="Plant 1"
-        android:textColor="#616161"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="652dp" />
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="159dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="16dp"
-        android:text="Spidermites"
-        android:textColor="#788b78"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="693dp" />
-
     <ImageView
         android:id="@+id/plant"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginStart="228dp"
-        android:layout_marginTop="452dp"
+        android:layout_marginTop="470dp"
         android:src="@drawable/plant"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textGardenGlideAdmin"
-        android:layout_width="229dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="240dp"
-        android:text="Plant 1"
-        android:textColor="#616161"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="652dp" />
-
-    <TextView
-        android:id="@+id/last30Days"
-        android:layout_width="159dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="240dp"
-        android:text="Spidermites"
-        android:textColor="#788b78"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="693dp" />
 
     <View
         android:id="@+id/recent_scans_background"
@@ -136,7 +91,7 @@
         android:id="@+id/image"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="108dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="280dp"
         android:src="@drawable/image"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,10 +101,10 @@
 
     <ImageView
         android:id="@+id/came"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="280dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="270dp"
         android:src="@drawable/cam"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -171,6 +126,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="2dp"
         android:gravity="center"
+        android:fontFamily="@font/alata"
         android:text="Point the camera at your plant to get a diagnosis"
         android:textColor="#424242"
         android:textSize="14.5sp"
@@ -183,10 +139,11 @@
 
     <TextView
         android:id="@+id/image_prediction_title"
-        android:layout_width="190dp"
-        android:layout_height="27dp"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
         android:layout_marginTop="176dp"
         android:gravity="center"
+        android:fontFamily="@font/alata"
         android:text="Image Prediction"
         android:textColor="#292929"
         android:textSize="20.5sp"
@@ -198,7 +155,7 @@
     <View
         android:id="@+id/navigation_bar_section"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="58dp"
         android:alpha="0.5"
         android:background="#FFD8FDC1"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -208,42 +165,44 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/navigation_bar"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="4dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/nav_icon_1"
-            android:layout_width="30dp"
-            android:layout_height="32dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="00dp"
             android:contentDescription="Navigation Icon 1"
             android:src="@drawable/home" />
 
         <ImageView
             android:id="@+id/nav_icon_2"
-            android:layout_width="34dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="80dp"
+            android:layout_width="54dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
             android:contentDescription="Navigation Icon 2"
             android:src="@drawable/camera" />
 
         <ImageView
             android:id="@+id/nav_icon_3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="80dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
             android:contentDescription="Navigation Icon 3"
             android:src="@drawable/cart" />
 
         <ImageView
             android:id="@+id/nav_icon_4"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="80dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="60dp"
             android:layout_marginTop="-7dp"
             android:contentDescription="Navigation Icon 4"
             android:src="@drawable/dot" />

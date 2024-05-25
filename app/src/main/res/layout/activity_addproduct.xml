@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="255dp"
         android:layout_marginStart="20dp"
+        android:fontFamily="@font/alata"
         android:text="Product title"
         android:textColor="#616161"
         android:textSize="22sp"
@@ -76,23 +77,14 @@
         android:id="@+id/activeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:fontFamily="@font/alata"
+        android:layout_marginTop="87dp"
         android:layout_marginStart="60dp"
         android:text="Active"
         android:textColor="#5a5a5a"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="261dp"
         tools:layout_editor_absoluteY="20dp" />
-
-    <TextView
-        android:layout_width="111dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginStart="20dp"
-        android:gravity="center_vertical"
-        android:text="Media"
-        android:textColor="#484848"
-        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/addimage"
@@ -117,8 +109,9 @@
     <TextView
         android:layout_width="150dp"
         android:layout_height="25dp"
+        android:fontFamily="@font/alata"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="288dp"
         android:text="Add description"
         android:textColor="#8b8b8b"
         android:textSize="19sp"
@@ -127,9 +120,10 @@
     <TextView
         android:layout_width="111dp"
         android:layout_height="34dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="325dp"
         android:layout_marginStart="60dp"
         android:gravity="center_vertical"
+        android:fontFamily="@font/alata"
         android:text="0.00"
         android:textColor="#484848"
         android:textSize="20sp" />
@@ -143,10 +137,11 @@
 
         <TextView
             android:layout_width="177dp"
-            android:layout_height="21dp"
+            android:layout_height="25dp"
             android:layout_marginStart="55dp"
             android:layout_marginTop="40dp"
             android:gravity="center_vertical"
+            android:fontFamily="@font/alata"
             android:text="Online Store"
             android:textColor="#8b8b8b"
             android:textSize="18sp"
@@ -157,7 +152,7 @@
             android:layout_width="31dp"
             android:layout_height="28dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="37dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="34dp"
             android:layout_marginBottom="17dp"
             android:src="@drawable/greendot" />
@@ -166,17 +161,18 @@
             android:id="@+id/orangedot"
             android:layout_width="31dp"
             android:layout_height="28dp"
-            android:layout_marginTop="67dp"
+            android:layout_marginTop="70dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="34dp"
             android:src="@drawable/orangedot"/>
 
         <TextView
             android:layout_width="177dp"
-            android:layout_height="21dp"
+            android:layout_height="25dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="70dp"
             android:textStyle="bold"
+            android:fontFamily="@font/alata"
             android:gravity="center_vertical"
             android:text="Point of Sale"
             android:textColor="#8b8b8b"
@@ -188,6 +184,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginStart="20dp"
             android:text="Sales channels"
+            android:fontFamily="@font/alata"
             android:textColor="#616161"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -196,6 +193,7 @@
             android:layout_width="60dp"
             android:layout_height="25dp"
             android:layout_marginStart="350dp"
+            android:fontFamily="@font/alata"
             android:layout_marginTop="5dp"
             android:text="Edit"
             android:textColor="#8b8b8b"
@@ -210,6 +208,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="510dp"
         android:layout_marginStart="20dp"
+        android:fontFamily="@font/alata"
         android:text="Variants"
         android:textColor="#616161"
         android:textSize="22sp"
@@ -230,8 +229,9 @@
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="547dp"
         android:text="Add description"
+        android:fontFamily="@font/alata"
         android:textColor="#8b8b8b"
         android:textSize="19sp"
         android:gravity="center_vertical" />
@@ -241,6 +241,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="620dp"
         android:layout_marginStart="20dp"
+        android:fontFamily="@font/alata"
         android:text="Inventory"
         android:textColor="#616161"
         android:textSize="22sp"
@@ -250,7 +251,8 @@
         android:layout_width="60dp"
         android:layout_height="25dp"
         android:layout_marginStart="350dp"
-        android:layout_marginTop="620dp"
+        android:fontFamily="@font/alata"
+        android:layout_marginTop="625dp"
         android:text="Edit"
         android:textColor="#8b8b8b"
         android:textSize="19sp"
@@ -262,6 +264,7 @@
         android:layout_marginTop="670dp"
         android:layout_marginStart="20dp"
         android:gravity="center_vertical"
+        android:fontFamily="@font/alata"
         android:text="Available"
         android:textColor="#484848"
         android:textSize="20sp" />
@@ -272,7 +275,8 @@
         android:layout_marginTop="670dp"
         android:layout_marginStart="280dp"
         android:gravity="center_vertical"
-        android:text="--       0       +"
+        android:fontFamily="@font/alata"
+        android:text="--     0     +"
         android:textColor="#484848"
         android:textSize="20sp" />
 
@@ -288,10 +292,11 @@
 
     <TextView
         android:layout_width="177dp"
-        android:layout_height="21dp"
+        android:layout_height="27dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="720dp"
+        android:layout_marginTop="717dp"
         android:gravity="center_vertical"
+        android:fontFamily="@font/alata"
         android:text="Shipping"
         android:textColor="#8b8b8b"
         android:textSize="18sp"
@@ -309,10 +314,11 @@
 
     <TextView
         android:layout_width="177dp"
-        android:layout_height="21dp"
+        android:layout_height="27dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="760dp"
+        android:layout_marginTop="758dp"
         android:gravity="center_vertical"
+        android:fontFamily="@font/alata"
         android:text="Product Organization"
         android:textColor="#8b8b8b"
         android:textSize="18sp"
@@ -330,49 +336,43 @@
 
     <TextView
         android:layout_width="177dp"
-        android:layout_height="21dp"
+        android:layout_height="25dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="800dp"
+        android:layout_marginTop="797dp"
         android:gravity="center_vertical"
+        android:fontFamily="@font/alata"
         android:text="Collections"
         android:textColor="#8b8b8b"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="177dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="820dp"
-        android:gravity="center_vertical"
-        android:text="Home Page"
-        android:textColor="#8b8b8b"
-        android:textSize="12sp"/>
 
     <!-- Bottom Navigation -->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="111dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="140dp"
-        android:gravity="center_vertical"
-        android:text="Media"
-        android:textColor="#484848"
-        android:textSize="20sp" />
 
-    <View
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="111dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="140dp"
+            android:fontFamily="@font/alata"
+            android:gravity="center_vertical"
+            android:text="Media"
+            android:textColor="#484848"
+            android:textSize="20sp" />
+
+        <View
         android:id="@+id/navigation_bar_section"
         android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:layout_marginTop="850dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="833dp"
         android:alpha="0.5"
         android:background="#FFD8FDC1" />
 
         <LinearLayout
             android:id="@+id/navigation_bar"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="58dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="0dp"
@@ -382,33 +382,33 @@
 
             <ImageView
                 android:id="@+id/homee"
-                android:layout_width="30dp"
-                android:layout_height="32dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="0dp"
                 android:contentDescription="Navigation Icon 1"
                 android:src="@drawable/home" />
 
             <ImageView
                 android:id="@+id/camera"
-                android:layout_width="34dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="80dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="60dp"
                 android:contentDescription="Navigation Icon 2"
                 android:src="@drawable/camera" />
 
             <ImageView
                 android:id="@+id/cartin"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="80dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="60dp"
                 android:contentDescription="Navigation Icon 3"
                 android:src="@drawable/cart" />
 
             <ImageView
                 android:id="@+id/nav_icon_4"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginStart="80dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="60dp"
                 android:layout_marginTop="-7dp"
                 android:contentDescription="Navigation Icon 4"
                 android:src="@drawable/dot" />

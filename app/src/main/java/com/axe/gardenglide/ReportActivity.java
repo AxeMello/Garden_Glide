@@ -16,7 +16,7 @@ public class ReportActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
 
-        ImageView nav_icon_1 = findViewById(R.id.nav_icon_1);
+        ImageView nav_icon_1 = findViewById(R.id.homee);
         nav_icon_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class ReportActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView nav_icon_2 = findViewById(R.id.nav_icon_2);
+        ImageView nav_icon_2 = findViewById(R.id.camee);
         nav_icon_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +32,7 @@ public class ReportActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView nav_icon_3 = findViewById(R.id.nav_icon_3);
+        ImageView nav_icon_3 = findViewById(R.id.cartee);
         nav_icon_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +40,7 @@ public class ReportActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView nav_icon_4= findViewById(R.id.nav_icon_4);
+        ImageView nav_icon_4= findViewById(R.id.dotee);
         nav_icon_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

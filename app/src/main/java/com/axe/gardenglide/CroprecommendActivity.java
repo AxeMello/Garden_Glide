@@ -42,7 +42,7 @@ public class CroprecommendActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView nav_icon_4= findViewById(R.id.nav_icon_4);
+        ImageView nav_icon_4= findViewById(R.id.sett);
         nav_icon_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
