@@ -4,10 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.IOException; // Import the IOException class
+
 public class CroprecommendActivity extends AppCompatActivity {
+    private cropClassifier cropClassifier; // Assuming CropClassifier is declared somewhere
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,14 +63,14 @@ public class CroprecommendActivity extends AppCompatActivity {
         try {
             cropClassifier = new cropClassifier(this);
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // Print the stack trace to debug
         }
 
         float[] input = {120, 50, 70, 27, 82.0f, 226.655537f}; // Example input
-        String result = cropClassifier.classify(input);
-
-        TextView resultTextView = findViewById(R.id.resultTextView);
-        resultTextView.setText("Predicted Crop: " + result);
+//        String result = cropClassifier.classify(input);
+//
+//        TextView resultTextView = findViewById(R.id.resultTextView);
+//        resultTextView.setText("Predicted Crop: " + result);
 
     }
 }

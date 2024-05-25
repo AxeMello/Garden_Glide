@@ -29,18 +29,18 @@ public class cropClassifier {
         labelClasses = Utils.loadLabelClasses(context, "label_classes.json");
     }
 
-    public String classify(float[] input) {
-        // Scale input values
-        float[] scaledInput = scaleInput(input);
-
-        TensorBuffer inputBuffer = TensorBufferFloat.createFixedSize(new int[]{1, input.length});
-        inputBuffer.loadArray(scaledInput);
-
-        TensorBuffer outputBuffer = TensorBufferFloat.createFixedSize(new int[]{1, labelClasses.size()});
-        interpreter.run(inputBuffer.getBuffer(), outputBuffer.getBuffer().rewind());
-
-        return getLabel(outputBuffer.getFloatArray());
-    }
+//    public String classify(float[] input) {
+//        // Scale input values
+//        float[] scaledInput = scaleInput(input);
+//
+//        TensorBuffer inputBuffer = TensorBufferFloat.createFixedSize(new int[]{1, input.length}, DataType.FLOAT64);
+//        inputBuffer.loadArray(scaledInput);
+//
+//        TensorBuffer outputBuffer = TensorBufferFloat.createFixedSize(new int[]{1, labelClasses.size()}, DataType.object);
+//        interpreter.run(inputBuffer.getBuffer(), outputBuffer.getBuffer().rewind());
+//
+//        return getLabel(outputBuffer.getFloatArray());
+//    }
 
     private float[] scaleInput(float[] input) {
         float[] scaledInput = new float[input.length];

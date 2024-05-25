@@ -83,6 +83,14 @@
         android:background="#d8fdc1"/>
 
     <TextView
+        android:id="@+id/comparisonResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predicted Crop: "
+        android:textSize="20sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
         android:id="@+id/moisture_level"
         android:layout_width="198dp"
         android:layout_height="26dp"
@@ -113,12 +121,12 @@
         android:src="@drawable/droplet" />
 
     <TextView
-        android:id="@+id/moisture_percentage"
+        android:id="@+id/textViewResult"
         android:layout_width="68dp"
         android:layout_height="50dp"
         android:layout_marginStart="265dp"
         android:layout_marginTop="352dp"
-        android:text="68%"
+        android:text="output"
         android:textColor="#3e2900"
         android:textSize="28sp"
         android:textStyle="bold"

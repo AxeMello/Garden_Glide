@@ -17,18 +17,18 @@
     <!-- ImageView to display selected image -->
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"/>
-
     <!-- TextView to display prediction result -->
     <TextView
         android:id="@+id/predictionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
 </LinearLayout>
